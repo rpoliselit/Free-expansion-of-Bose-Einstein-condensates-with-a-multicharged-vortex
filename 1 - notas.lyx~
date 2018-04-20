@@ -1,0 +1,3761 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi=\psi\left(x/R\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R=R(t)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u=\frac{x}{R}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}\left\langle x\right\rangle =\left\langle \frac{1}{i\hbar}\left[x,H\right]\right\rangle =\left\langle \frac{1}{i\hbar}\left[x,\frac{p^{2}}{2m}\right]\right\rangle =\frac{1}{m}\left\langle p\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{R}=\frac{\hbar}{mR}\left[\frac{\int\psi^{*}i\partial_{u}\psi du}{\int u^{2}\left(\partial_{u}\left|\psi\right|^{2}\right)du}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}^{2}\left\langle x\right\rangle =\left\langle \frac{1}{i\hbar}\left[\frac{p}{m},H\right]\right\rangle =\left\langle \frac{1}{i\hbar}\left[\frac{p}{m},\frac{p^{2}}{2m}\right]\right\rangle =0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}^{2}\int\psi^{*}x\psi dx=\int u\left[\partial_{(x/R)}^{2}\left|\psi\right|^{2}u^{2}\dot{R}^{2}+\partial_{(x/R)}\left|\psi\right|^{2}2u\dot{R}^{2}-\partial_{(x/R)}\left|\psi\right|^{2}uR\ddot{R}\right]du=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int u\left[\partial_{u}\left(u\partial_{u}\left|\psi\right|^{2}\right)\dot{R}^{2}-\left(u\partial_{u}\left|\psi\right|^{2}\right)R\ddot{R}\right]du=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R\ddot{R}=\left[\frac{\int u\partial_{u}\left(u\partial_{u}\left|\psi\right|^{2}\right)du}{\int\left(u^{2}\partial_{u}\left|\psi\right|^{2}\right)du}\right]\dot{R}^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ddot{R}=\frac{\hbar^{2}}{m^{2}R^{3}}\left\{ \left[\frac{\int u\partial_{u}\left(u\partial_{u}\left|\psi\right|^{2}\right)du}{\int\left(u^{2}\partial_{u}\left|\psi\right|^{2}\right)du}\right]\left|\frac{\int\psi^{*}i\partial_{u}\psi du}{\int\left(u^{2}\partial_{u}\left|\psi\right|^{2}\right)du}\right|^{2}\right\} 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}\left\langle x^{2}\right\rangle =\left\langle \frac{1}{i\hbar}\left[x^{2},\frac{p^{2}}{2m}\right]\right\rangle =\frac{1}{m}\left\langle px+xp\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}^{2}\left\langle x^{2}\right\rangle =\left\langle \frac{1}{i\hbar}\left[\frac{px+xp}{m},\frac{p^{2}}{2m}\right]\right\rangle =\frac{1}{i\hbar2m^{2}}\left\langle \left[px+xp,p^{2}\right]\right\rangle =\frac{2}{m^{2}}\left\langle p^{2}\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+1.1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi=\psi\left(u,A\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u(t)=\frac{x}{R_{x}(t)},\qquad A_{x}(t)=i\alpha_{x}(t)x^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}\left\langle x\right\rangle =\frac{1}{m}\left\langle p\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}\left\langle x\right\rangle =-\dot{R_{x}}R_{x}\int u^{2}\left(\partial_{u}n\right)du+i\dot{\alpha_{x}}R_{x}^{4}\int\left(\psi^{*}\partial_{A}\psi-\psi\partial_{A}\psi^{*}\right)du
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left\langle p\right\rangle =\int\psi^{*}\left(p_{u}+2i\alpha up_{A}\right)\psi du
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{R_{x}}\int(-1)u^{2}\left(\partial_{u}n\right)du+i\dot{\alpha_{x}}R_{x}^{3}\int\left(\psi^{*}\partial_{A}\psi-\psi\partial_{A}\psi^{*}\right)du=\frac{1}{mR_{x}}\int\psi^{*}\left(p_{u}+2i\alpha up_{A}\right)\psi du
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}^{2}\left\langle x\right\rangle =0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+1.2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi=\psi(u,w,s)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u=\frac{x}{R_{x}},\qquad w=\frac{y}{R_{y}},\qquad s=\frac{z}{R_{z}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+\partial_{t}\left\langle x\right\rangle ={\displaystyle \frac{1}{m}}\left\langle p_{x}\right\rangle \\
+\\
+\partial_{t}\left\langle y\right\rangle ={\displaystyle \frac{1}{m}}\left\langle p_{y}\right\rangle \\
+\\
+\partial_{t}\left\langle z\right\rangle ={\displaystyle \frac{1}{m}}\left\langle p_{z}\right\rangle 
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+{\displaystyle \frac{\dot{R_{x}}}{R_{x}^{2}}I_{x}\left(\partial_{u},x\right)+\frac{\dot{R_{y}}}{R_{y}^{2}}I_{x}\left(\partial_{w},x\right)+\frac{\dot{R_{z}}}{R_{z}^{2}}I_{x}\left(\partial_{s},x\right)=\frac{\left\langle p_{u}\right\rangle }{mR_{x}}}\\
+\\
+{\displaystyle \frac{\dot{R_{x}}}{R_{x}^{2}}I_{y}\left(\partial_{u},y\right)+\frac{\dot{R_{y}}}{R_{y}^{2}}I_{y}\left(\partial_{w},y\right)+\frac{\dot{R_{z}}}{R_{z}^{2}}I_{y}\left(\partial_{s},y\right)=\frac{\left\langle p_{w}\right\rangle }{mR_{y}}}\\
+\\
+{\displaystyle \frac{\dot{R_{x}}}{R_{x}^{2}}I_{z}\left(\partial_{u},z\right)+\frac{\dot{R_{y}}}{R_{y}^{2}}I_{z}\left(\partial_{w},z\right)+\frac{\dot{R_{z}}}{R_{z}^{2}}I_{z}\left(\partial_{s},z\right)=\frac{\left\langle p_{s}\right\rangle }{mR_{z}}}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+I_{b}\left(a,c\right)=-\int ac\left(\partial_{b}\left|\psi\right|^{2}\right)d^{3}r\\
+\\
+K\left(p_{a}\right)=-i\hbar\int\int\int\psi^{*}\partial_{a}\psi dadbdc\\
+\\
+\left\langle p_{a}\right\rangle =-i\hbar\int\int\int\psi^{*}\partial_{a}\psi dxdydz
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+{\displaystyle \dot{R_{x}}I_{u}\left(u,u\right)+\dot{R_{y}}\frac{R_{x}}{R_{y}}I_{w}\left(w,u\right)+\dot{R_{z}}\frac{R_{x}}{R_{z}}I_{s}\left(s,u\right)=\frac{K(p_{u})}{mR_{x}}}\\
+\\
+{\displaystyle \dot{R_{x}}\frac{R_{y}}{R_{x}}I_{u}\left(u,w\right)+\dot{R_{y}}I_{w}\left(w,w\right)+\dot{R_{z}}\frac{R_{y}}{R_{z}}I_{s}\left(s,w\right)=\frac{K(p_{w})}{mR_{y}}}\\
+\\
+{\displaystyle \dot{R_{x}}\frac{R_{z}}{R_{x}}I_{u}\left(u,s\right)+\dot{R_{y}}\frac{R_{z}}{R_{y}}I_{w}\left(w,s\right)+\dot{R_{z}}I_{s}\left(s,s\right)=\frac{K(p_{s})}{mR_{z}}}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mu\Psi=\left[-\frac{\hbar^{2}}{2m}\nabla+V_{eff}\right]\Psi
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\xi_{\ell}^{2}=\frac{\ell^{2}}{8\pi a_{s}n}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{eff}=\frac{\hbar^{2}\ell^{2}}{2m\rho^{2}}+V+U_{0}n=V+\left(\frac{\ell^{2}}{8\pi a_{s}n\rho^{2}}+1\right)U_{0}n=V+\left(\frac{\xi_{\ell}^{2}}{\rho^{2}}+1\right)U_{0}n=V+\left(\frac{\xi_{\ell}^{2}+\rho^{2}}{\rho^{2}}\right)U_{0}n
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+n=\left(\frac{\rho^{2}}{\rho^{2}+\xi_{\ell}^{2}}\right)\frac{\mu-V}{U_{0}}=\frac{\mu}{U_{0}}\left(\frac{\rho^{2}}{\rho^{2}+\xi_{\ell}^{2}}\right)\left[1-\left(\frac{\rho}{R_{\rho}}\right)^{2}-\left(\frac{z}{R_{z}}\right)^{2}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Psi=\frac{\rho}{\sqrt{\rho^{2}+\xi_{\ell}^{2}}}\left(\frac{\mu}{U_{0}}\right)^{\frac{1}{2}}\sqrt{1-\left(\frac{\rho}{R_{\rho}}\right)^{2}-\left(\frac{z}{R_{z}}\right)^{2}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{eff}=\frac{1}{2}m\omega^{2}\left(\rho^{2}+\lambda^{2}z^{2}\right)+\left(\frac{\xi_{\ell}^{2}}{\rho^{2}}+1\right)U_{0}n=\left[\frac{m^{2}\omega^{2}}{\hbar^{2}}\left(\rho^{2}+\lambda^{2}z^{2}\right)\xi_{1}^{2}+\frac{\xi_{\ell}^{2}}{\rho^{2}}+1\right]U_{0}n
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{eff}=\left[\left(\frac{\rho^{2}}{R_{\rho}^{4}}+\frac{z^{2}}{R_{z}^{4}}\right)\xi_{1}^{2}+\frac{\xi_{\ell}^{2}}{\rho^{2}}+1\right]U_{0}n=\left[\left(\frac{\rho^{2}}{R_{\rho}^{2}}+\lambda\frac{z^{2}}{R_{z}^{2}}\right)\frac{\xi_{1}^{2}}{R_{\rho}^{2}}+\frac{\xi_{\ell}^{2}}{\rho^{2}}+1\right]U_{0}n
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi=\rho^{\ell}e^{i\ell\phi}f
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+i\hbar\partial_{t}f=-\frac{\hbar^{2}}{2m}\left(\partial_{\rho}^{2}+\partial_{z}^{2}\right)f+Vf-\frac{\hbar^{2}\left(2\ell+1\right)}{2m\rho}\partial_{\rho}f+U_{0}\rho^{2\ell}nf
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{eff}=V+U_{0}n\left(\rho^{2\ell}-\frac{\xi_{1}^{2}\left(2\ell+1\right)}{\rho}\partial_{\rho}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Psi=\psi(u)e^{i\ell\phi}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u=\frac{\rho}{R}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mu\psi=-\frac{\hbar^{2}}{2m}\left[\left(\partial_{u}\psi\right)\frac{1}{R\rho}+\left(\partial_{u}^{2}\psi\right)\frac{1}{R^{2}}-\frac{\ell^{2}}{\rho^{2}}\psi\right]+\left(V+U_{0}n\right)\psi
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-i\hbar\left(\rho\partial_{u}\psi\right)\frac{\dot{R}}{R^{2}}=-\frac{\hbar^{2}}{2mR^{2}}\left[\frac{R}{\rho}\left(\partial_{u}\psi\right)+\left(\partial_{u}^{2}\psi\right)\right]+\left(\frac{\hbar^{2}\ell^{2}}{2m\rho^{2}}+V+U_{0}n\right)\psi
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-i\hbar\dot{R}=-\frac{\hbar^{2}}{2m\rho}\left[\frac{R}{\rho}+\left(\frac{\partial_{u}^{2}\psi}{\partial_{u}\psi}\right)\right]+R^{2}\left[V+\left(\frac{\xi^{2}}{\rho^{2}}+1\right)U_{0}n\right]\left(\frac{\psi}{\partial_{u}\psi}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-i\hbar\frac{\dot{R}}{R}+\frac{\hbar^{2}}{2m\rho^{2}}R^{-1}=-\frac{\hbar^{2}R^{-2}}{2m\rho}\left(\frac{\partial_{u}^{2}\psi}{\partial_{u}\psi}\right)+\left[V+\left(\frac{\xi^{2}}{\rho^{2}}+1\right)U_{0}n\right]\left(\frac{\psi}{\partial_{u}\psi}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi=\psi\left(x/R\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R=R(t)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u=\frac{x}{R}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}\left\langle U_{0}n\right\rangle =\left\langle \frac{1}{i\hbar}\left[U_{0}n,H\right]\right\rangle =\left\langle \frac{U_{0}}{i\hbar}\left[n,\frac{p^{2}}{2m}\right]\right\rangle =\left\langle \frac{i\hbar U_{0}}{2m}\left[n,\partial_{x}^{2}\right]\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+\left[n,\partial_{x}^{2}\right] & = & \partial_{x}\left[n,\partial_{x}\right]+\left[n,\partial_{x}\right]\partial_{x}\\
+\\
+ & = & \partial_{x}\left(n\partial_{x}-\partial_{x}n\right)+\left(n\partial_{x}-\partial_{x}n\right)\partial_{x}\\
+\\
+ & = & \partial_{x}\left[n\partial_{x}-\left(\partial_{x}n\right)-n\partial_{x}\right]+\left[n\partial_{x}-\left(\partial_{x}n\right)-n\partial_{x}\right]\partial_{x}\\
+\\
+ & = & -\left(\partial_{x}^{2}n\right)-2\left(\partial_{x}n\right)\partial_{x}\\
+\\
+ & = & -\frac{1}{R^{2}}\left(\partial_{u}^{2}n\right)-\frac{2}{R}\left(\partial_{u}n\right)\partial_{x}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}\left\langle U_{0}n\right\rangle =U_{0}\partial_{t}\int n^{2}dx=-U_{0}\int2n\left(\partial_{u}n\right)u\frac{\dot{R}}{R}dx
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left\langle \frac{i\hbar U_{0}}{2m}\left[n,\partial_{x}^{2}\right]\right\rangle =-\frac{i\hbar U_{0}}{2mR^{2}}\int\psi^{*}\left[\left(\partial_{u}^{2}n\right)+2R\left(\partial_{u}n\right)\partial_{x}\right]\psi dx=-\frac{i\hbar U_{0}}{2mR^{2}}\int\psi^{*}\left[\left(\partial_{u}^{2}n\right)\psi+2\left(\partial_{u}n\right)\partial_{u}\psi\right]dx
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{R}=\frac{\hbar}{2mR}\left\{ \frac{\int\psi^{*}i\left[\left(\partial_{u}^{2}n\right)\psi+2\left(\partial_{u}n\right)\partial_{u}\psi\right]dx}{\int2nu\left(\partial_{u}n\right)dx}\right\} 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}^{2}\left\langle U_{0}n\right\rangle =\left\langle \frac{1}{i\hbar}\left[\left[U_{0}n,H\right],H\right]\right\rangle =-\left\langle \frac{i\hbar U_{0}}{4m^{2}}\left[\left[n,\partial_{x}^{2}\right],\partial_{x}^{2}\right]\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+\partial_{t}^{2}\left\langle n\right\rangle  & = & -\partial_{t}\int2n\left(\partial_{u}n\right)u\frac{\dot{R}}{R}dx\\
+\\
+ & = & \int\left[2\left(\partial_{u}n\right)^{2}u^{2}\left(\frac{\dot{R}}{R}\right)^{2}+2n\left(\partial_{u}^{2}n\right)u^{2}\left(\frac{\dot{R}}{R}\right)^{2}+4n\left(\partial_{u}n\right)u\left(\frac{\dot{R}}{R}\right)^{2}-2n\left(\partial_{u}n\right)u\frac{\ddot{R}}{R}\right]dx\\
+\\
+ & = & \int\left\{ \left[2\left(\partial_{u}n\right)^{2}u^{2}+2n\left(\partial_{u}^{2}n\right)u^{2}+4n\left(\partial_{u}n\right)u\right]\left(\frac{\dot{R}}{R}\right)^{2}-2n\left(\partial_{u}n\right)u\frac{\ddot{R}}{R}\right\} dx\\
+\\
+ & = & \left(\frac{\dot{R}}{R}\right)^{2}\int\left[2\left(\partial_{u}n\right)^{2}u^{2}+2n\left(\partial_{u}^{2}n\right)u^{2}+4n\left(\partial_{u}n\right)u\right]dx-\frac{\ddot{R}}{R}\int2n\left(\partial_{u}n\right)udx
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+-\left[\left[n,\partial_{x}^{2}\right],\partial_{x}^{2}\right] & = & \partial_{x}\left\{ \left[\frac{1}{R^{2}}\left(\partial_{u}^{2}n\right)+\frac{2}{R}\left(\partial_{u}n\right)\partial_{x}\right]\partial_{x}-\partial_{x}\left[\frac{1}{R^{2}}\left(\partial_{u}^{2}n\right)+\frac{2}{R}\left(\partial_{u}n\right)\partial_{x}\right]\right\} \\
+ & + & \left\{ \left[\frac{1}{R^{2}}\left(\partial_{u}^{2}n\right)+\frac{2}{R}\left(\partial_{u}n\right)\partial_{x}\right]\partial_{x}-\partial_{x}\left[\frac{1}{R^{2}}\left(\partial_{u}^{2}n\right)+\frac{2}{R}\left(\partial_{u}n\right)\partial_{x}\right]\right\} \partial_{x}\\
+\\
+ & = & -\partial_{x}\left[\frac{1}{R^{3}}\left(\partial_{u}^{3}n\right)+\frac{2}{R^{2}}\left(\partial_{u}^{2}n\right)\partial_{x}\right]-\left[\frac{1}{R^{3}}\left(\partial_{u}^{3}n\right)+\frac{2}{R^{2}}\left(\partial_{u}^{2}n\right)\partial_{x}\right]\partial_{x}\\
+\\
+ & = & -\frac{1}{R^{4}}\left(\partial_{u}^{4}n\right)-\frac{4}{R^{3}}\left(\partial_{u}^{3}n\right)\partial_{x}-\frac{4}{R^{2}}\left(\partial_{u}^{2}n\right)\partial_{x}^{2}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TF
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi(\rho,\phi,z,t)=A(t)\rho^{\ell}e^{i\ell\phi}\left[1-\left(\frac{\rho}{R_{\rho}(t)}\right)^{2}-\left(\frac{z}{R_{z}(t)}\right)^{2}\right]\exp\left[iB_{\rho}(t)\frac{\rho^{2}}{2}\right]\exp\left[iB_{z}(t)\frac{\rho^{2}}{2}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A^{2}=\left[\frac{N\left(2\ell+3\right)\left(2\ell+5\right)}{4\pi^{\frac{3}{2}}R_{\rho}^{2\ell+2}R_{z}}\right]\frac{\Gamma\left(\frac{3}{2}+\ell\right)}{\Gamma\left(1+\ell\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+{\displaystyle \frac{i\hbar}{2}\int\left(\psi^{*}\partial_{t}\psi-\psi\partial_{t}\psi^{*}\right)d^{3}r} & = & {\displaystyle {\displaystyle -N\hbar\left[\frac{\dot{B_{\rho}}R_{\rho}^{2}\left(1+\ell\right)+\dot{B_{z}}R_{z}^{2}}{2\ell+7}\right]}}\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+{\displaystyle \frac{\hbar^{2}}{2M}\int\left|\nabla\psi\right|^{2}d^{3}r} & = & {\displaystyle \frac{N\hbar^{2}}{M}\left[\frac{B_{\rho}^{2}R_{\rho}^{2}\left(1+\ell\right)+B_{z}^{2}R_{z}^{2}}{2\ell+7}+\frac{\ell\left(2\ell+5\right)}{2R_{\rho}^{2}}\right]}\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+{\displaystyle \frac{1}{2}M\omega_{\rho}^{2}\int\left(\rho^{2}+\lambda^{2}z^{2}\right)nd^{3}r} & = & {\displaystyle \frac{1}{2}\frac{M\omega_{\rho}^{2}4\pi^{\frac{3}{2}}A^{2}R_{\rho}^{2m+2}R_{z}}{\left(5+2\ell\right)\left(7+2\ell\right)}\left[R_{\rho}^{2}\frac{\Gamma\left(2+\ell\right)}{\Gamma\left(\frac{5}{2}+\ell\right)}+\lambda^{2}R_{z}^{2}\frac{\Gamma\left(1+\ell\right)}{\Gamma\left(\frac{5}{2}+\ell\right)}\right]}\\
+\\
+ & = & {\displaystyle NM\omega_{\rho}^{2}\left[\frac{R_{\rho}^{2}\left(1+\ell\right)+\lambda^{2}R_{z}^{2}}{2\ell+7}\right]}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+{\displaystyle \frac{U_{0}}{2}\int\left|\psi\right|^{4}d^{3}r} & = & {\displaystyle \frac{N^{2}U_{0}}{2\pi^{\frac{3}{2}}R_{\rho}^{2}R_{z}}\left[\frac{\left(2\ell+3\right)^{2}\left(2\ell+5\right)^{2}}{\left(4\ell+3\right)\left(4\ell+5\right)\left(4\ell+7\right)}\frac{\Gamma\left(1+2\ell\right)\Gamma\left(\frac{3}{2}+\ell\right)}{\Gamma\left(\frac{3}{2}+2\ell\right)\Gamma\left(1+\ell\right)}\right]}\\
+\\
+ & = & {\displaystyle \frac{N^{2}U_{0}}{4\pi^{\frac{3}{2}}R_{\rho}^{2}R_{z}}\left[\left(2\ell+3\right)\left(2\ell+5\right)\frac{\Gamma\left(1+2\ell\right)\Gamma\left(\frac{7}{2}+\ell\right)}{\Gamma\left(\frac{9}{2}+2\ell\right)\Gamma\left(1+\ell\right)}\right]}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+L & = & -N\hbar\omega_{\rho}{\displaystyle \left\{ \omega_{\rho}^{-1}\left[\frac{\dot{B_{\rho}}R_{\rho}^{2}\left(1+\ell\right)+\dot{B_{z}}R_{z}^{2}}{2\ell+7}\right]+a_{osc}^{2}\left[\frac{B_{\rho}^{2}R_{\rho}^{2}\left(1+\ell\right)+B_{z}^{2}R_{z}^{2}}{2\ell+7}+\frac{\ell\left(2\ell+5\right)}{2R_{\rho}^{2}}\right]\right.}\\
+\\
+ & + & {\displaystyle \left.a_{osc}^{-2}\left[\frac{R_{\rho}^{2}\left(1+\ell\right)+\lambda^{2}R_{z}^{2}}{2\ell+7}\right]+\frac{Na_{osc}^{2}a_{s}}{\pi^{\frac{1}{2}}R_{\rho}^{2}R_{z}}\left[\left(2\ell+3\right)\left(2\ell+5\right)\frac{\Gamma\left(1+2\ell\right)\Gamma\left(\frac{7}{2}+\ell\right)}{\Gamma\left(\frac{9}{2}+2\ell\right)\Gamma\left(1+\ell\right)}\right]\right\} }
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+rescalando 
+\begin_inset Formula $R_{\rho}(t)=a_{osc}r_{\rho}(t)$
+\end_inset
+
+, 
+\begin_inset Formula $R_{z}(t)=a_{osc}r_{z}(t)$
+\end_inset
+
+, 
+\begin_inset Formula $\tau=\omega_{\rho}t$
+\end_inset
+
+, 
+\begin_inset Formula $B_{\rho}(t)=a_{osc}^{-2}\beta_{\rho}(t)$
+\end_inset
+
+, 
+\begin_inset Formula $B_{z}(t)=a_{osc}^{-2}\beta_{z}(t)$
+\end_inset
+
+ e 
+\begin_inset Formula $\gamma=Na_{s}/a_{osc}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+L & = & -N\hbar\omega_{\rho}{\displaystyle \left\{ \frac{\left(\dot{\beta_{\rho}}+\beta_{\rho}^{2}+1\right)r_{\rho}^{2}\left(1+\ell\right)+\left(\dot{\beta_{z}}+\beta_{z}^{2}+\lambda^{2}\right)r_{z}^{2}}{2\ell+7}\right.}\\
+\\
+ & + & {\displaystyle \left.\frac{\ell\left(2\ell+5\right)}{2r_{\rho}^{2}}+\frac{\gamma}{\pi^{\frac{1}{2}}r_{\rho}^{2}r_{z}}\left[\left(2\ell+3\right)\left(2\ell+5\right)\frac{\Gamma\left(1+2\ell\right)\Gamma\left(\frac{7}{2}+\ell\right)}{\Gamma\left(\frac{9}{2}+2\ell\right)\Gamma\left(1+\ell\right)}\right]\right\} }
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+\beta_{\rho}={\displaystyle \frac{\dot{r_{\rho}}}{r_{\rho}}}\\
+\\
+\beta_{z}={\displaystyle \frac{\dot{r_{z}}}{r_{z}}}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ddot{r_{\rho}}+r_{\rho}=\frac{1}{r_{\rho}^{3}}\left[\frac{\ell\left(2\ell+5\right)\left(2\ell+7\right)}{2\left(1+\ell\right)}\right]+\frac{\gamma}{r_{\rho}^{3}r_{z}}\left[\frac{\left(2\ell\right)!\left(2\ell+3\right)\left(2\ell+5\right)\Gamma\left(\frac{9}{2}+\ell\right)}{\pi^{\frac{1}{2}}\left(1+\ell\right)!\Gamma\left(\frac{9}{2}+2\ell\right)}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ddot{r_{z}}+r_{z}=\frac{\gamma}{r_{\rho}^{2}r_{z}^{2}}\left[\frac{\left(2\ell+3\right)\left(2\ell+5\right)\left(2\ell\right)!\Gamma\left(\frac{9}{2}+\ell\right)}{\pi^{\frac{1}{2}}\ell!\Gamma\left(\frac{9}{2}+2\ell\right)}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+{\displaystyle r_{\rho0}^{4}=\left[\frac{\ell\left(2\ell+5\right)\left(2\ell+7\right)}{2\left(1+\ell\right)}\right]+\frac{\gamma}{r_{z0}}\left[\frac{\left(2\ell\right)!\left(2\ell+3\right)\left(2\ell+5\right)\Gamma\left(\frac{9}{2}+\ell\right)}{\pi^{\frac{1}{2}}\left(1+\ell\right)!\Gamma\left(\frac{9}{2}+2\ell\right)}\right]}\\
+\\
+{\displaystyle r_{z}^{3}=\frac{\gamma}{r_{\rho0}^{2}}\left[\frac{\left(2\ell+3\right)\left(2\ell+5\right)\left(2\ell\right)!\Gamma\left(\frac{9}{2}+\ell\right)}{\pi^{\frac{1}{2}}\ell!\Gamma\left(\frac{9}{2}+2\ell\right)}\right]}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\xi_{\ell}^{2}=\frac{\ell^{2}R_{\rho}^{2}R_{z}}{15\pi^{\frac{1}{2}}Na_{s}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi_{\ell}\rightarrow a_{osc}^{2}\xi_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\xi_{\ell}^{2}=\frac{\ell^{2}r_{\rho}^{2}r_{z}}{15\pi^{\frac{1}{2}}\gamma}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{\ell}=N\hbar\omega_{\rho}\left\{ \frac{\ell\left(2\ell+5\right)}{2r_{\rho}^{2}}+\frac{r_{\rho}^{2}\left(1+\ell\right)+\lambda^{2}r_{z}^{2}}{2\ell+7}+\frac{\gamma\left(2\ell\right)!}{\pi^{\frac{1}{2}}\ell!r_{\rho}^{2}r_{z}}\left[\frac{\left(2\ell+5\right)\Gamma\left(\frac{7}{2}+\ell\right)}{\left(2\ell+3\right)^{-1}\Gamma\left(\frac{9}{2}+2\ell\right)}\right]\right\} 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+TF e Gaussian
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+E_{\ell}=N\hbar\omega_{\rho}\left[\frac{C_{1}}{r_{\rho}^{2}}+\frac{C_{2}}{r_{z}^{2}}+C_{3}r_{\rho}^{2}+C_{4}\lambda^{2}r_{z}^{2}+\frac{C_{5}\gamma}{r_{\rho}^{2}r_{z}}\right],\label{eq:3.1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+C_{1}^{(TF)}={\displaystyle \frac{\ell\left(2\ell+5\right)}{2}}\\
+\\
+C_{2}^{(TF)}=0\\
+\\
+C_{3}^{(TF)}={\displaystyle \frac{1+\ell}{2\ell+7}}\\
+\\
+C_{4}^{(TF)}={\displaystyle \frac{1}{2\ell+7}}\\
+\\
+C_{5}^{(TF)}={\displaystyle \frac{\left(2\ell\right)!}{\pi^{\frac{1}{2}}\ell!}\left[\frac{\left(2\ell+5\right)\Gamma\left(\frac{7}{2}+\ell\right)}{\left(2\ell+3\right)^{-1}\Gamma\left(\frac{9}{2}+2\ell\right)}\right]}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+C_{1}^{(G)}={\displaystyle \frac{\left(\ell+1\right)}{2}}\\
+\\
+C_{2}^{(G)}={\displaystyle \frac{1}{4}}\\
+\\
+C_{3}^{(G)}={\displaystyle \frac{\left(\ell+1\right)}{2}}\\
+\\
+C_{4}^{(G)}={\displaystyle \frac{1}{4}}\\
+\\
+C_{5}^{(G)}={\displaystyle \frac{(2\ell)!}{2^{2\ell}\sqrt{2\pi}\left(\ell!\right)^{2}}}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+{\displaystyle \ddot{r_{\rho}}+r_{\rho}=\frac{D_{1}}{r_{\rho}^{3}}+\frac{D_{2}\gamma}{r_{\rho}^{3}r_{z}}}\\
+\\
+{\displaystyle \ddot{r_{z}}+\lambda^{2}r_{z}=\frac{D_{3}}{r_{z}^{3}}+\frac{D_{4}\gamma}{r_{\rho}^{2}r_{z}^{2}}}.
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+D_{1}^{(TF)}={\displaystyle \frac{\ell\left(2\ell+5\right)\left(2\ell+7\right)}{2\left(1+\ell\right)}}\\
+\\
+D_{2}^{(TF)}={\displaystyle \frac{\left(2\ell\right)!\left(2\ell+3\right)\left(2\ell+5\right)\Gamma\left(\frac{9}{2}+\ell\right)}{\pi^{\frac{1}{2}}\left(1+\ell\right)!\Gamma\left(\frac{9}{2}+2\ell\right)}}\\
+\\
+D_{3}^{(TF)}=0\\
+\\
+D_{4}^{(TF)}={\displaystyle \frac{\left(2\ell\right)!\left(2\ell+3\right)\left(2\ell+5\right)\Gamma\left(\frac{9}{2}+\ell\right)}{\pi^{\frac{1}{2}}\ell!\Gamma\left(\frac{9}{2}+2\ell\right)}}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+D_{1}^{(G)}={\displaystyle 1}\\
+\\
+D_{2}^{(G)}={\displaystyle \frac{(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell+1\right)!\ell!}}\\
+\\
+D_{3}^{(G)}={\displaystyle 1}\\
+\\
+D_{4}^{(G)}={\displaystyle \frac{(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}}}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang english
+2D TF
+\end_layout
+
+\begin_layout Subsection*
+sem vortice
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\psi=\sqrt{\frac{2\nu}{\pi R^{2}}}\left[1-\left(\frac{\rho}{R}\right)^{2}\right]^{\frac{1}{2}}\exp\left(iB\frac{\rho^{2}}{2}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+L=-\frac{\hbar\nu}{6}R^{2}\dot{B}-\frac{\hbar^{2}\nu B^{2}R^{2}}{6m}-\frac{\nu}{6}m\omega^{2}R^{2}-\frac{2\nu U_{0}}{3\pi R^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+L=-\nu\hbar\omega\left[\frac{1}{6}u^{2}\left(\dot{\beta}+\beta^{2}+1\right)+\frac{8\nu a_{s}}{3u^{2}}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\beta=\frac{\dot{u}}{u}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\ddot{u}+u=\left(\frac{64}{3}\nu a_{s}\right)\frac{1}{u^{3}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+u_{0}=2\left(\frac{4}{3}\nu a_{s}\right)^{\frac{1}{4}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+vortice 1
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\psi=\sqrt{\frac{2\nu}{\pi R^{2\ell+2}A_{1}}}\rho^{\ell}e^{i\ell\phi}\left[1-\left(\frac{\rho}{R}\right)^{2}\right]^{\frac{1}{2}}\exp\left(iB\frac{\rho^{2}}{2}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+{\displaystyle A_{1}=\frac{2}{\left(\ell+1\right)\left(\ell+2\right)}}\\
+\\
+{\displaystyle A_{2}=}{\displaystyle \frac{2}{\left(\ell+2\right)\left(\ell+3\right)}}\\
+\\
+{\displaystyle A_{3}=\frac{1}{2\left(\ell+1\right)\left(2\ell+1\right)\left(\ell+3\right)}}\\
+\\
+{\displaystyle A_{4}=\frac{4}{\ell\left(\ell+1\right)}}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+L=-\frac{\hbar\nu}{2}R^{2}\dot{B}\frac{\left(\ell+1\right)}{\left(\ell+3\right)}-\frac{\hbar^{2}\nu}{2mR^{2}}\frac{\left(\ell+1\right)\left(\ell+2\right)}{\ell}-\frac{\hbar^{2}\nu}{2m}B^{2}R^{2}\left(\frac{\ell+1}{\ell+3}\right)-\frac{\nu}{2}m\omega^{2}R^{2}\left(\frac{\ell+1}{\ell+3}\right)-\frac{\nu^{2}U_{0}}{2\pi R^{2}}\frac{\left(\ell+1\right)\left(\ell+2\right)^{2}}{\left(2\ell+1\right)\left(2\ell+3\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+L=-\nu\hbar\omega\frac{\left(\ell+1\right)}{2}\left\{ u^{2}\left(\frac{\dot{\beta}+\beta^{2}+1}{\ell+3}\right)+\frac{\ell+2}{\ell u^{2}}+\frac{\nu a_{s}}{u^{2}}\left[\frac{4\left(\ell+2\right)^{2}}{\left(2\ell+1\right)\left(2\ell+3\right)}\right]\right\} 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\beta=\frac{\dot{u}}{u}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\ddot{u}+u=\left(\ell+2\right)\left(\ell+3\right)\left[\frac{1}{\ell}+\frac{4\left(\ell+2\right)\nu a_{s}}{\left(2\ell+1\right)\left(2\ell+3\right)}\right]\frac{1}{u^{3}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+u_{0}^{4}=\left(\ell+2\right)\left(\ell+3\right)\left[\frac{1}{\ell}+\frac{4\left(\ell+2\right)\nu a_{s}}{\left(2\ell+1\right)\left(2\ell+3\right)}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\ddot{u}=\left(\ell+2\right)\left(\ell+3\right)\left[\frac{1}{\ell}+\frac{4\left(\ell+2\right)\nu a_{s}}{\left(2\ell+1\right)\left(2\ell+3\right)}\right]\frac{1}{u^{3}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+u=u_{0}\sqrt{1+\tau^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\xi_{\ell}=\frac{\ell R}{4\sqrt{\nu a_{s}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+vortice 2
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\psi=C\left(\frac{\rho^{2}}{\rho^{2}+\ell^{2}\xi^{2}}\right)^{\frac{1}{2}}e^{i\ell\phi}\left[1-\left(\frac{\rho}{R}\right)^{2}\right]^{\frac{1}{2}}\exp\left(iB\frac{\rho^{2}}{2}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\psi=\sqrt{\frac{2\nu}{\pi R^{2}A_{1}}}\left(\frac{\rho^{2}}{\rho^{2}+R^{2}\ell^{2}\alpha^{2}}\right)^{\frac{1}{2}}e^{i\ell\phi}\left[1-\left(\frac{\rho}{R}\right)^{2}\right]^{\frac{1}{2}}\exp\left(iB\frac{\rho^{2}}{2}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+A_{1} & = & 1+2\ell^{2}\alpha^{2}+2\ell^{2}\alpha^{2}\left(1+2\ell^{2}\alpha^{2}\right)\log\left(\frac{\ell^{2}\alpha^{2}}{1+\ell^{2}\alpha^{2}}\right)\\
+\\
+ & \approx & 1+2\left[1+2\log\left(\ell\alpha\right)\right]\ell^{2}\alpha^{2}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{time}=-\frac{\nu\hbar A_{2}}{2A_{1}}\dot{B}R^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+A_{2} & = & \frac{1}{3}-\ell^{2}\alpha^{2}-2\ell^{4}\alpha^{4}-2\ell^{4}\alpha^{4}\left(1+\ell^{2}\alpha^{2}\right)\log\left(\frac{\ell^{2}\alpha^{2}}{1+\ell^{2}\alpha^{2}}\right)\\
+\\
+ & \approx & \frac{1}{3}-\ell^{2}\alpha^{2}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{trap}=-\frac{1}{2}m\omega^{2}\nu R^{2}\frac{A_{2}}{A_{1}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{int}=-\frac{4U_{0}\nu^{2}A_{3}}{\pi R^{2}A_{1}^{2}}=-\frac{16\hbar^{2}\nu^{2}A_{3}a_{s}}{R^{2}A_{1}^{2}m}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+A_{3} & = & \frac{1}{6}+2\ell^{2}\alpha^{2}+2\ell^{4}\alpha^{4}+\ell^{2}\alpha^{2}\left(1+3\ell^{2}\alpha^{2}+2\ell^{4}\alpha^{4}\right)\log\left(\frac{\ell^{2}\alpha^{2}}{1+\ell^{2}\alpha^{2}}\right)\\
+\\
+ & \approx & \frac{1}{6}+2\left[1+\log\left(\ell\alpha\right)\right]\ell^{2}\alpha^{2}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{kin}=-\frac{\hbar^{2}\nu}{2m}\frac{\ell^{2}}{R^{2}}\frac{A_{4}}{A_{1}}-\frac{\nu\hbar^{2}A_{2}}{2mA_{1}}B^{2}R^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+A_{4} & = & 2\left(1+\alpha^{2}\right)\left\{ -1-\left(1+\ell^{2}\alpha^{2}\right)\log\left(\frac{\ell^{2}\alpha^{2}}{1+\ell^{2}\alpha^{2}}\right)\right\} \\
+\\
+ & \approx & -2-4\log\left(\ell\alpha\right)+2\left[-1+\ell^{2}-2\left(1+\ell^{2}\right)\log\left(\ell\alpha\right)\right]\alpha^{2}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=-\nu\hbar\omega\left\{ \frac{u^{2}A_{2}}{2A_{1}}\left(\dot{\beta}+\beta^{2}+1\right)+\frac{\ell^{2}A_{4}}{2u^{2}A_{1}}+\frac{\nu a_{s}}{u^{2}}\left(\frac{16A_{3}}{A_{1}^{2}}\right)\right\} 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\beta=\frac{\dot{u}}{u}+\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)\frac{\dot{\alpha}}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\beta^{2}=\left(\frac{\dot{u}}{u}\right)^{2}+\frac{\dot{\alpha}\dot{u}}{u}\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)+\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)^{2}\frac{\dot{\alpha}^{2}}{4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\dot{\beta}=\frac{\ddot{u}}{u}-\left(\frac{\dot{u}}{u}\right)^{2}+\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)\frac{\ddot{\alpha}}{2}+\left[\frac{A_{2}^{\prime\prime}}{A_{2}}-\left(\frac{A_{2}^{\prime}}{A_{2}}\right)^{2}-\frac{A_{1}^{\prime\prime}}{A_{1}}+\left(\frac{A_{1}^{\prime}}{A_{1}}\right)^{2}\right]\frac{\dot{\alpha}^{2}}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\beta}+\beta^{2}=\frac{\ddot{u}}{u}+\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)\frac{\ddot{\alpha}}{2}+\frac{\dot{\alpha}\dot{u}}{u}\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)+\left[\frac{A_{2}^{\prime\prime}}{A_{2}}-\frac{A_{1}^{\prime\prime}}{A_{1}}+2\left(\frac{8\ell^{2}\alpha\left[1+\log\left(\ell\alpha\right)\right]A_{1}^{\prime}}{A_{1}}\right)^{2}+\frac{1}{2}\left(\frac{A_{1}^{\prime}}{A_{1}}+\frac{A_{2}^{\prime}}{A_{2}}\right)^{2}\right]\frac{\dot{\alpha}^{2}}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccccc}
+\partial_{\alpha}A_{1} & = & A_{1}^{\prime} & = & 8\ell^{2}\alpha\left[1+\log\left(\ell\alpha\right)\right]\\
+\\
+\partial_{\alpha}A_{2} & = & A_{2}^{\prime} & = & -2\ell^{2}\alpha\\
+\\
+\partial_{\alpha}A_{3} & = & A_{3}^{\prime} & = & 2\ell^{2}\alpha\left[3+2\log\left(\ell\alpha\right)\right]\\
+\\
+\partial_{\alpha}A_{4} & = & A_{4}^{\prime} & = & -2\alpha^{-1}+4\ell^{2}\alpha\log\left(\ell\alpha\right)
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccccc}
+\partial_{\alpha}^{2}A_{1} & = & A_{1}^{\prime\prime} & = & 8\ell^{2}\left[2+\log\left(\ell\alpha\right)\right]\\
+\\
+\partial_{\alpha}^{2}A_{2} & = & A_{2}^{\prime\prime} & = & -2\ell^{2}\\
+\\
+\partial_{\alpha}^{2}A_{3} & = & A_{3}^{\prime\prime} & = & 2\ell^{2}\left[5+2\log\left(\ell\alpha\right)\right]\\
+\\
+\partial_{\alpha}^{2}A_{4} & = & A_{4}^{\prime\prime} & = & 2\alpha^{-2}+4\ell^{2}\left[1+\log\left(\ell\alpha\right)\right]
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+{\displaystyle \frac{A_{1}^{\prime}}{A_{1}}} & = & {\displaystyle \frac{8\ell^{2}\alpha\left[1+\log\left(\ell\alpha\right)\right]}{1+2\ell^{2}\alpha^{2}\left[1+2\log\left(\ell\alpha\right)\right]}}\\
+\\
+{\displaystyle \frac{A_{2}^{\prime}}{A_{2}}} & = & {\displaystyle \frac{-2\ell^{2}\alpha}{\frac{1}{3}-\ell^{2}\alpha^{2}}}\\
+\\
+ & \approx\\
+\\
+{\displaystyle \frac{A_{1}^{\prime\prime}}{A_{1}}} & = & {\displaystyle \frac{8\ell^{2}\left[2+\log\left(\ell\alpha\right)\right]}{1+2\ell^{2}\alpha^{2}\left[1+2\log\left(\ell\alpha\right)\right]}}\\
+\\
+ & \approx\\
+\\
+{\displaystyle \frac{A_{2}^{\prime\prime}}{A_{2}}} & = & {\displaystyle \frac{-2\ell^{2}}{\frac{1}{3}-\ell^{2}\alpha^{2}}}\\
+\\
+ & \approx
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ddot{u}+\dot{\alpha}\dot{u}\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)+u\left\{ \frac{\ddot{\alpha}}{2}\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)+\left[\frac{A_{2}^{\prime\prime}}{A_{2}}-\frac{A_{1}^{\prime\prime}}{A_{1}}+2\left(\frac{A_{1}^{\prime}}{A_{1}}\right)^{2}+\frac{1}{2}\left(\frac{A_{1}^{\prime}}{A_{1}}+\frac{A_{2}^{\prime}}{A_{2}}\right)^{2}\right]\frac{\dot{\alpha}^{2}}{2}+1\right\} =\frac{2}{A_{2}}\left[\ell^{2}A_{4}+16\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]\frac{1}{u^{3}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u\left(A_{2}^{\prime}A_{1}-A_{2}A_{1}^{\prime}\right)\left(\dot{\beta}+\beta^{2}+1\right)=\frac{1}{u^{3}}\left[16\nu a_{s}\left(2A_{3}\frac{A_{1}^{\prime}}{A_{1}}-A_{3}^{\prime}\right)-\ell^{2}\left(A_{4}^{\prime}A_{1}-A_{4}A_{1}^{\prime}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+\left(A_{2}^{\prime}A_{1}-A_{2}A_{1}^{\prime}\right) & = & -2\ell^{2}\alpha\left\{ 1+2\left[1+2\log\left(\ell\alpha\right)\right]\ell^{2}\alpha^{2}\right\} -8\ell^{2}\alpha\left(\frac{1}{3}-\ell^{2}\alpha^{2}\right)\left[1+\log\left(\ell\alpha\right)\right]\\
+\\
+ & \approx & -\frac{2}{3}\ell^{2}\alpha\left[13+4\log\left(\ell\alpha\right)\right]\\
+\\
+\left(2A_{3}{\displaystyle \frac{A_{1}^{\prime}}{A_{1}}}-A_{3}^{\prime}\right) & = & 2\left\{ \frac{1}{6}+2\left[1+\log\left(\ell\alpha\right)\right]\ell^{2}\alpha^{2}\right\} \frac{8\ell^{2}\alpha\left[1+\log\left(\ell\alpha\right)\right]}{1+2\ell^{2}\alpha^{2}\left[1+2\log\left(\ell\alpha\right)\right]}-2\ell^{2}\alpha\left[3+2\log\left(\ell\alpha\right)\right]\\
+\\
+ & \approx & \ell^{2}\alpha\left\{ {\displaystyle \frac{8\left[1+\log\left(\ell\alpha\right)\right]}{3+6\ell^{2}\alpha^{2}\left[1+2\log\left(\ell\alpha\right)\right]}}-4\log\left(\ell\alpha\right)-6\right\} \\
+\\
+\left(A_{4}^{\prime}A_{1}-A_{4}A_{1}^{\prime}\right) & = & \left[-2\alpha^{-1}+4\ell^{2}\alpha\log\left(\ell\alpha\right)\right]\left\{ 1+2\left[1+2\log\left(\ell\alpha\right)\right]\ell^{2}\alpha^{2}\right\} \\
+ & - & \left\{ -1-2\log\left(\ell\alpha\right)+\left[-1+\ell^{2}-2\left(1+\ell^{2}\right)\log\left(\ell\alpha\right)\right]\alpha^{2}\right\} 8\ell^{2}\alpha\left[1+\log\left(\ell\alpha\right)\right]\\
+\\
+ & \approx & -6\alpha^{-1}+4\ell^{2}\alpha\left\{ 2+7\log\left(\ell\alpha\right)+4\left[\log\left(\ell\alpha\right)\right]^{2}\right\} 
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soluçao estacionaria
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u_{0}^{4}=\frac{2}{A_{2}}\left[\ell^{2}A_{4}+16\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+2\left[\ell^{2}A_{4}+16\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]\left(\frac{A_{2}^{\prime}}{A_{2}}A_{1}-A_{1}^{\prime}\right)=16\nu a_{s}\left(2A_{3}\frac{A_{1}^{\prime}}{A_{1}}-A_{3}^{\prime}\right)-\ell^{2}\left(A_{4}^{\prime}A_{1}-A_{4}A_{1}^{\prime}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Vortice 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi=\sqrt{\frac{2\nu}{\pi R^{2}A_{1}}}e^{i\ell\phi}\left[1-\left(\frac{\ell\xi}{\rho}\right)^{2}-\left(\frac{\rho}{R}\right)^{2}\right]^{\frac{1}{2}}\exp\left(iB\frac{\rho^{2}}{2}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+A_{1} & = & 1-2\ell^{2}\alpha^{2}\left[1-2\log\left(\ell\alpha\right)\right]+\ell^{4}\alpha^{4}\\
+\\
+ & \approx & 1-2\ell^{2}\alpha^{2}\left[1-4\log\left(\ell\alpha\right)\right]
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{time}=-\hbar\nu\dot{B}R^{2}\frac{A_{2}}{A_{1}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+A_{2} & = & \frac{1}{3}-2\ell^{2}\alpha^{2}\left[1-\ell^{2}\alpha^{2}\right]-\ell^{4}\alpha^{4}+\frac{2}{3}\ell^{6}\alpha^{6}\\
+\\
+ & \approx & \frac{1}{3}-2\ell^{2}\alpha^{2}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{int}=\frac{4U_{0}\nu^{2}}{\pi R^{2}}\frac{A_{3}}{A_{1}^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+A_{3} & = & \frac{1}{6}+2\ell^{2}\alpha^{2}\log\left(\ell\alpha\right)+\ell^{2}\alpha^{2}\left(1-\ell^{2}\alpha^{2}\right)+\frac{1}{6}\ell^{6}\alpha^{6}\\
+\\
+ & \approx & \frac{1}{6}+\ell^{2}\alpha^{2}\left[1+2\log\left(\ell\alpha\right)\right]
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{kin}=-\frac{\hbar^{2}\nu\ell^{2}A_{4}}{2mR^{2}A_{1}}-\frac{\nu\hbar^{2}A_{2}}{2mA_{1}}B^{2}R^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A_{4}=-3-\log\left(\ell\alpha\right)+2\ell\alpha+\ell^{2}\alpha^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=\nu\hbar\omega\left\{ \frac{u^{2}A_{2}}{2A_{1}}\left(\dot{\beta}+\beta^{2}+1\right)+\frac{\ell^{2}A_{4}}{2u^{2}A_{1}}+\frac{\nu a_{s}}{u^{2}}\left(\frac{16A_{3}}{A_{1}^{2}}\right)\right\} 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ddot{u}+\dot{\alpha}\dot{u}\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)+u\left\{ \frac{\ddot{\alpha}}{2}\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)+\left[\frac{A_{2}^{\prime\prime}}{A_{2}}-\frac{A_{1}^{\prime\prime}}{A_{1}}+2\left(\frac{A_{1}^{\prime}}{A_{1}}\right)^{2}+\frac{1}{2}\left(\frac{A_{1}^{\prime}}{A_{1}}+\frac{A_{2}^{\prime}}{A_{2}}\right)^{2}\right]\frac{\dot{\alpha}^{2}}{2}+1\right\} =\frac{2}{A_{2}}\left[\ell^{2}A_{4}+16\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]\frac{1}{u^{3}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u\left(A_{2}^{\prime}A_{1}-A_{2}A_{1}^{\prime}\right)\left(\dot{\beta}+\beta^{2}+1\right)=\frac{1}{u^{3}}\left[16\nu a_{s}\left(2A_{3}\frac{A_{1}^{\prime}}{A_{1}}-A_{3}^{\prime}\right)-\ell^{2}\left(A_{4}^{\prime}A_{1}-A_{4}A_{1}^{\prime}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soluçao estacionaria
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u^{4}=\frac{2}{A_{2}}\left[\ell^{2}A_{4}+16\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\ell^{2}A_{4}+16\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]\left(\frac{A_{2}^{\prime}}{A_{2}}A_{1}-A_{1}^{\prime}\right)=8\nu a_{s}\left(2A_{3}\frac{A_{1}^{\prime}}{A_{1}}-A_{3}^{\prime}\right)-\frac{\ell^{2}}{2}\left(A_{4}^{\prime}A_{1}-A_{4}A_{1}^{\prime}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu a_{s}=40$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TF1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.8218
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.8445
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0421
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9054
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0790
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TF2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9039
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.3302
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0395
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.7317
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0791
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TF3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9039
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9412
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0391
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0762
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0274
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0559
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1543
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1118
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sech²
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0617
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0441
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poster
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu a_{s}=40$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(2)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.8218
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.8782
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0421
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9988
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0790
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.0004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1317
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(3)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9039
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.3302
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0395
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.7317
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0791
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.3584
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1581
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(1)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9039
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9412
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0391
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0762
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0162
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1417
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(4)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0274
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0559
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1543
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1118
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.4047
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2236
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu a_{s}=40$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(1)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9039
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9412
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0391
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0762
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0162
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1417
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(2)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.8218
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.8782
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0421
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9988
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0790
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.0004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1317
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(3)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9039
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.3302
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0395
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.7317
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0791
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.3584
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1581
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(4)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0274
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0395
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1543
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0791
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.4047
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1581
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{\ell}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu a_{s}=40$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(1)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.43274
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.45496
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.51767
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(2)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15.0451
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15.0405
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15.9901
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(3)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.43274
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.0905
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.9255
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Psi_{\ell}^{(4)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.11111
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.41407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.3213
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

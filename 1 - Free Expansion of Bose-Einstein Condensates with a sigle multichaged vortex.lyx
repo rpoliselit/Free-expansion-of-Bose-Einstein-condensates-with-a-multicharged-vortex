@@ -1,0 +1,2864 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass revtex4
+\begin_preamble
+\usepackage{caption}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Free expansion of Bose-Einstein Condensates with a Multi-charged Vortex
+\end_layout
+
+\begin_layout Author
+R.
+ P.
+ Teles, F.
+ E.
+ A.
+ dos Santos, M.
+ A.
+ Caracanhas and V.
+ S.
+ Bagnato
+\end_layout
+
+\begin_layout Affiliation
+Instituto de Física de São Carlos, USP, Caixa Postal 369, 13560-970 São
+ Carlos, São Paulo, Brazil
+\end_layout
+
+\begin_layout Abstract
+In this work, we analyse the expansion of Bose-Einstein condensates containing
+ multi-charged vortices in two and three spatial dimensions by using both
+ variational methods and numeric simulations of the Gross-Pitaevskii equation.
+ Several features like the evolution of the vortex core size and the asymptotic
+ velocity during free expansion was studied after the cloud was released
+ from different harmonic trap configurations.
+\end_layout
+
+\begin_layout Abstract
+*****************************************************************
+\end_layout
+
+\begin_layout Abstract
+We found that an oblate condensate shape magnifying the effects of the vorticity
+ in the expansion of the cloud.
+ Besides that, the asymptotic velocity field of the cloud dimensions gave
+ direct information about the interaction and circulation 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Acredito que podíamos trabalhar melhor essa parte, tentar analisar mais
+ gráficos.
+ 
+\end_layout
+
+\end_inset
+
+, being also an important parameter to track.
+\end_layout
+
+\begin_layout Abstract
+****************************************************************
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The extension of quantum phenomena into macroscopic scales gave rise to
+ a whole plethora of effects such as superconductivity, superfluidity, and
+ Bose-Einstein Condensation which played central roles in the last-century
+ physics.
+\end_layout
+
+\begin_layout Standard
+(*******************************************************************************
+************)
+\end_layout
+
+\begin_layout Standard
+The remarkable discovery in BEC physics was the nucleation of vortices inside
+ the Bose-Einstein condensate of Alkali atoms, with many experimental evidence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "3v,rev3,turb,pethick,davis"
+
+\end_inset
+
+.
+ These vortices have quantized angular momentum by number of particles,
+ and they are nucleation when the system gains a rotation, i.e., angular momentum.
+ If the rotation of system overcomes a critical velocity of rotation, 
+\begin_inset Formula $\Omega_{c}$
+\end_inset
+
+, it triggers the emergence of quantized vortices
+\begin_inset CommandInset citation
+LatexCommand cite
+key "critical1,vf1,vor2,pd"
+
+\end_inset
+
+.
+ Thus the dynamics of vortex formation, the stability dynamics and the free
+ expansion dynamics are the subject of several studies
+\begin_inset CommandInset citation
+LatexCommand cite
+key "d1v,vi1,vi2"
+
+\end_inset
+
+.
+ The vortex dynamics have proved of paramount importance for the understanding
+ of the quantum turbulence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "turb,liv3"
+
+\end_inset
+
+, and the free expansion is the main experimental method of measurement
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vp,vor1,rev3,obv,MIT"
+
+\end_inset
+
+.
+ There are many theoretical works about vortex latices and vortex in rotating
+ traps 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "aa,fad,obv,pethick,rev2,dsv"
+
+\end_inset
+
+, where the starting point is the Gross-Pitaeviskii equation (GPE) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gpe1,gpe2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In this paper we considered a muli-charged vortex at the center of the condensat
+e, which is the center of the harmonic trap.
+ Here, we used the variational method to study the effects that arise while
+ the free expansion of condensate, as consequence of non-fundamental vortices.
+ A similar works was done by E.
+ Lundh 
+\emph on
+et al
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "emil"
+
+\end_inset
+
+ to the case where the vortex has only one quantum of circulation, which
+ the same work can be found with quite numeric character in Micheli 
+\emph on
+et al
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "michele"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The section II present the theoretical methods used in this work.
+ In the section III, we have search for a suitable trial function and analyses
+ this one to determine the radii of condensate.
+ Soon after it, in the sections IV and V, we found the initials condition
+ and the motion equations to the free expansion, and also take the TF-limit
+ to the both.
+\end_layout
+
+\begin_layout Standard
+Finally, the section VI has the discussions and outlooks about our results
+ by the method employed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Acrescentar uma(ou à uma) secção mostrando que a expansão vai com 
+\begin_inset Formula $1/r^{3}$
+\end_inset
+
+ (cinética) e 
+\begin_inset Formula $1/r^{4}$
+\end_inset
+
+ (interação) de maneira geral, assim podemos justificar o uso do ansatiz
+ gaussiano.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Variational Method
+\end_layout
+
+\begin_layout Standard
+At zero temperature, a Bose gas with scattering length 
+\begin_inset Formula $a_{s}$
+\end_inset
+
+ much smaller than the average interparticle distance can be described by
+ the Gross-Pitaevskii equation (GPE)
+\begin_inset Formula 
+\begin{equation}
+i\hbar\frac{\partial\Psi(\vec{r},t)}{\partial t}=\left[-\frac{\hbar^{2}}{2m}\nabla^{2}+V(\vec{r})+U_{0}\left|\Psi(\vec{r},t)\right|^{2}\right]\Psi(\vec{r},t),\label{eq:1.1}
+\end{equation}
+
+\end_inset
+
+with the harmonic trap given in cylindrical coordinates according to 
+\begin_inset Formula $V(\vec{r})=\frac{1}{2}m\omega_{\rho}^{2}(\rho^{2}+\lambda^{2}z^{2})$
+\end_inset
+
+, where 
+\begin_inset Formula $m$
+\end_inset
+
+ is the mass of the particles, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is an anisotropy parameter, and the constant of the coupling constant is
+ given by 
+\begin_inset Formula $U_{0}=4\pi\hbar^{2}a_{s}/m$
+\end_inset
+
+.
+ Following the variational principle, the Lagrangian density 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ which recoves the GPE for a complex field 
+\begin_inset Formula $\Psi(\vec{r},t)$
+\end_inset
+
+ can be written as
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+\mathcal{L}={\displaystyle \frac{i\hbar}{2}\left(\Psi^{*}(\vec{r},t)\frac{\partial\Psi(\vec{r},t)}{\partial t}-\Psi(\vec{r},t)\frac{\partial\Psi^{*}(\vec{r},t)}{\partial t}\right)}\\
+{\displaystyle -\frac{\hbar^{2}}{2m}\left|\nabla\Psi(\vec{r},t)\right|^{2}-V(\vec{r})\left|\Psi(\vec{r},t)\right|^{2}-\frac{U_{0}}{2}\left|\Psi(\vec{r},t)\right|^{4}}.
+\end{array}\label{eq:1.2}
+\end{equation}
+
+\end_inset
+
+Where 
+\begin_inset Formula $\Psi(\vec{r},t)$
+\end_inset
+
+ can be approximated by a trial function 
+\begin_inset Formula $\Psi_{\ell}(\vec{r},t)$
+\end_inset
+
+ which depends on a set of variational parameters 
+\begin_inset Formula $q_{i}=q_{i}(t)$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "perez1,perez2"
+
+\end_inset
+
+.
+ This function can then be substituted into
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=\int\mathcal{L}d^{3}r,\label{eq:1.3}
+\end{equation}
+
+\end_inset
+
+in such a way that their time evolution is given the Euler-Lagrange equations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial}{\partial t}\left(\frac{\partial L}{\partial\dot{q}_{i}}\right)-\frac{\partial L}{\partial q_{i}}=0.\label{eq:1.4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(*******************************************************************************
+***************)
+\end_layout
+
+\begin_layout Standard
+In that way, the next step is to find a suitable trial function.
+\end_layout
+
+\begin_layout Standard
+(*******************************************************************************
+*************)
+\end_layout
+
+\begin_layout Section
+2D Case
+\end_layout
+
+\begin_layout Standard
+For a very elongated along the 
+\begin_inset Formula $z-axis$
+\end_inset
+
+ cigar-shaped condensate containing a multi-charged vortex centered at this
+ axis, the effect of free expansion along this direction can be neglected
+ so that the system becomes effectively 2D.
+\end_layout
+
+\begin_layout Standard
+Here we consider three different Ans
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"a
+\end_layout
+
+\end_inset
+
+tze, all of them based in the Thomas-Fermi approach.
+ The first one is obtained by using the wave-function 
+\begin_inset Formula 
+\begin{equation}
+\psi_{\ell}(\rho,\phi)=f_{\ell}(\rho)e^{i\ell\phi},\label{eq:2.1}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $f_{\ell}(\rho)$
+\end_inset
+
+ is the amplitude of the wave function, and 
+\begin_inset Formula $e^{i\ell\phi}$
+\end_inset
+
+ is a phase which carries the information of the velocity field, where 
+\begin_inset Formula $\ell$
+\end_inset
+
+ is integer and means the quantum number of circulation.
+ Therefore, by introducing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2.1"
+
+\end_inset
+
+ in time-independent GPE we have a centrifugal term, which comes from phase
+ 
+\begin_inset Formula $e^{i\ell\phi}$
+\end_inset
+
+.
+ This term is write as 
+\begin_inset Formula $\left(\frac{\hbar^{2}\ell^{2}}{2m\rho^{r}}\right)f$
+\end_inset
+
+.
+ To find a suitable ansatz for multi-charged vortex, we considered the interval
+ of 
+\begin_inset Formula $\rho\ll\xi$
+\end_inset
+
+, and we have neglected potential terms from GPE.
+ By considering only kinetic terms with the additional centrifugal term,
+ we need to solve
+\begin_inset Formula 
+\begin{equation}
+-\frac{\hbar^{2}}{2m}\left[\frac{1}{\rho}\frac{\partial}{\partial\rho}\left(\rho\frac{\partial f}{\partial\rho}\right)\right]+\frac{\hbar^{2}\ell^{2}}{2m\rho^{2}}f=0,\label{eq:2.2}
+\end{equation}
+
+\end_inset
+
+this equation give us the solution for 
+\begin_inset Formula $f(\rho)$
+\end_inset
+
+ when this is smaller than cloud, which means the vortex solution.
+ For 
+\begin_inset Formula $\rho>\xi$
+\end_inset
+
+, we considered the TF-approach, thus our amplitude 
+\begin_inset Formula $f(\rho)$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+f(\rho)=\sqrt{\frac{2\nu}{\pi R^{2}A_{1}^{(1)}}}\left(\frac{\rho^{2}}{\rho^{2}+R^{2}\ell^{2}\alpha^{2}}\right)^{\frac{1}{2}}\psi_{TF}(\rho),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\alpha=\xi/R$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\psi_{TF}(\rho)=\sqrt{1-\left(\rho/R\right)^{2}}$
+\end_inset
+
+ for 
+\begin_inset Formula $0<\rho\leq R$
+\end_inset
+
+ otherwise 
+\begin_inset Formula $\psi_{TF}(\rho)=0$
+\end_inset
+
+ and
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\begin_inset Formula $A_{1}^{(1)}$
+\end_inset
+
+ will be showed after because all anstaz result in the same motion equations
+ distinguish only by the A's terms, 
+\begin_inset Formula $\nu$
+\end_inset
+
+ is the number of atoms per unit lengh.
+ A similar TF-approach can be extract from time-independent GPE, this deduction
+ is in the appendix A.
+ Thus the fist trial function is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Psi_{\ell}^{(1)}(\rho,\phi,t)=f(\rho,t)e^{i\ell\phi}\exp\left[iB^{(1)}(t)\frac{\rho^{2}}{2}\right],\label{eq:Tf1}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $\xi$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{1}^{(1)}$
+\end_inset
+
+ are time-dependents.
+\end_layout
+
+\begin_layout Standard
+The next ansatz was chosen as a simplification of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Tf1"
+
+\end_inset
+
+, which is write as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Psi_{\ell}^{(2)}(\rho,\phi,t)=\sqrt{\frac{2\nu}{\pi R(t)^{2\ell+2}A_{1}^{(2)}(t)}}\rho^{\ell}e^{i\ell\phi}\psi_{TF}(\rho,t)\exp\left[iB^{(2)}(t)\frac{\rho^{2}}{2}\right],\label{eq:Tf2}
+\end{equation}
+
+\end_inset
+
+where the vortex core is calculed as being inversaly proportional at the
+ healing lengh of the densite 
+\begin_inset Formula $\left|\Psi_{0}^{(2)}(\rho=0,t)\right|^{2}$
+\end_inset
+
+, given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\xi_{\ell}(t)=\ell\xi(t)=\frac{\ell R(t)}{4\sqrt{\nu a_{s}}}.
+\end{equation}
+
+\end_inset
+
+Note that, here the parameter 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is time-independent.
+ A similiar trial function was used by E.
+ Lundh 
+\emph on
+et al
+\emph default
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "emil"
+
+\end_inset
+
+ where they used a gaussian function in the place of 
+\begin_inset Formula $\psi_{TF}(\rho,t)$
+\end_inset
+
+ with 
+\begin_inset Formula $\ell=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the last one is the most commun used as a TF-approach of the vortex state
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Psi_{\ell}^{(3)}(\rho,\phi,t)=\sqrt{\frac{2\nu}{\pi R(t)^{2}A_{1}^{(3)}(t)}}e^{i\ell\phi}\sqrt{1-\left[\frac{\ell R(t)\alpha(t)}{\rho}\right]^{2}-\left(\frac{\rho}{R(t)}\right)^{2}}\exp\left[iB^{(3)}(t)\frac{\rho^{2}}{2}\right],\label{eq:Tf3}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Psi_{\ell}^{(3)}(\rho,\phi,t)$
+\end_inset
+
+ must be positive.
+ The parameters 
+\begin_inset Formula $B^{(i)}(t)$
+\end_inset
+
+ are responsible for the function curvature, in other words, it's from these
+ parameters that will appears the acceleration in motion equation by the
+ variational method
+\begin_inset CommandInset citation
+LatexCommand cite
+key "perez1"
+
+\end_inset
+
+.
+ Remembering the TF approximation is equivalent to neglict the kinect energy
+ part from time-independent GPE, so we will consider that the cuvature of
+ these, 
+\begin_inset Formula $\psi_{TF}(\rho,t)$
+\end_inset
+
+ and 
+\begin_inset Formula $\sqrt{1-\left[\xi(t)/\rho\right]^{2}-\left[\rho/R(t)\right]^{2}}$
+\end_inset
+
+, vary slowly which mean drop all terms that is due to the grandient of
+ this part in the Lagrangian calculation.
+ Another thing I should point out is the limit of integration of our calculation
+ to 
+\begin_inset Formula $\Psi_{\ell}^{(3)}(\rho,\phi,t)$
+\end_inset
+
+ was calculated in the approach of 
+\begin_inset Formula $\xi\ll R$
+\end_inset
+
+.
+ In general, when one use 
+\begin_inset Formula $\psi_{TF}$
+\end_inset
+
+ the parameter 
+\begin_inset Formula $R$
+\end_inset
+
+ is the radius of condensate (
+\begin_inset Formula $\rho_{rms}=R$
+\end_inset
+
+), however, in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Tf2"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Tf3"
+
+\end_inset
+
+ we must calculate the 
+\begin_inset Formula $\rho_{rms}=\left\langle \rho^{2}\right\rangle =R\sqrt{A_{2}/A_{1}}$
+\end_inset
+
+, because the size vortex core of these trial functions affects the scale
+ of the parameters of the wave function.
+ The procedure is the same when one uses a Gaussian trial function.
+ Rescaling the parameters to become dimenssionless as: 
+\begin_inset Formula $\tau=\omega t$
+\end_inset
+
+, 
+\begin_inset Formula $R(t)=\left(\hbar/m\omega_{\rho}\right)^{\frac{1}{2}}u(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{\rho}^{(i)}(t)=\left(\hbar/m\omega_{\rho}\right)^{-1}\beta_{\rho}^{(i)}(t)$
+\end_inset
+
+.
+ In this way, the Lagrangian is given by:
+\begin_inset Formula 
+\begin{equation}
+L=-\nu\hbar\omega\left\{ \frac{u(t)^{2}A_{2}^{(i)}(t)}{2A_{1}^{(i)}(t)}\left(\dot{\beta_{\rho}^{(i)}}(t)+\beta_{\rho}^{(i)}(t)^{2}+1\right)+\frac{\ell^{2}A_{4}^{(i)}(t)}{2u(t)^{2}A_{1}^{(i)}(t)}+\frac{\nu a_{s}}{u(t)^{2}}\left(\frac{16A_{3}^{(i)}(t)}{A_{1}^{(i)}(t)^{2}}\right)\right\} ,
+\end{equation}
+
+\end_inset
+
+where the A's are
+\begin_inset Formula 
+\begin{align}
+A_{1}^{(1)}= & 1+2\ell^{2}\alpha^{2}+2\ell^{2}\alpha^{2}\left(1+2\ell^{2}\alpha^{2}\right)\log\left(\frac{\ell^{2}\alpha^{2}}{1+\ell^{2}\alpha^{2}}\right)\\
+A_{2}^{(1)}= & \frac{1}{3}-\ell^{2}\alpha^{2}-2\ell^{4}\alpha^{4}-2\ell^{4}\alpha^{4}\left(1+\ell^{2}\alpha^{2}\right)\log\left(\frac{\ell^{2}\alpha^{2}}{1+\ell^{2}\alpha^{2}}\right)\\
+A_{3}^{(1)}= & \frac{1}{6}+2\ell^{2}\alpha^{2}+2\ell^{4}\alpha^{4}+\ell^{2}\alpha^{2}\left(1+3\ell^{2}\alpha^{2}+2\ell^{4}\alpha^{4}\right)\log\left(\frac{\ell^{2}\alpha^{2}}{1+\ell^{2}\alpha^{2}}\right)\\
+A_{4}^{(1)}= & 2\left(1+\alpha^{2}\right)\left\{ -1-\left(1+\ell^{2}\alpha^{2}\right)\log\left(\frac{\ell^{2}\alpha^{2}}{1+\ell^{2}\alpha^{2}}\right)\right\} 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A_{1}^{(2)}= & 2\left[\left(\ell+1\right)\left(\ell+2\right)\right]^{-1}\\
+A_{2}^{(2)}= & 2\left[\left(\ell+2\right)\left(\ell+3\right)\right]^{-1}\\
+A_{3}^{(2)}= & \left[2\left(\ell+1\right)\left(2\ell+1\right)\left(\ell+3\right)\right]^{-1}\\
+A_{4}^{(2)}= & 4\left[\ell\left(\ell+1\right)\right]^{-1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A_{1}^{(3)}= & \sqrt{1-4\ell^{2}\alpha^{2}}-4\ell^{2}\alpha^{2}\text{arctanh}\sqrt{1-4\ell^{2}\alpha^{2}}\\
+A_{2}^{(3)}= & \frac{1}{3}\left(1-4\ell^{2}\alpha^{2}\right)^{\frac{3}{2}}\\
+A_{3}^{(3)}= & \frac{1}{6}\left(1+8\ell^{2}\alpha^{2}\right)\sqrt{1-4\ell^{2}\alpha^{2}}-2\ell^{2}\alpha^{2}\text{arctanh}\sqrt{1-4\ell^{2}\alpha^{2}}\\
+A_{4}^{(3)}= & -4\sqrt{1-4\ell^{2}\alpha^{2}}+4\text{arctanh}\sqrt{1-4\ell^{2}\alpha^{2}}
+\end{align}
+
+\end_inset
+
+calculating the Euler-Lagrange equations, we have to 
+\begin_inset Formula $i=1,3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+\beta_{\rho}= & \frac{\dot{u}}{u}+\left(\frac{A_{2}^{\prime}}{A_{2}}-\frac{A_{1}^{\prime}}{A_{1}}\right)\frac{\dot{\alpha}}{2}\\
+u\left(A_{2}^{\prime}A_{1}-A_{2}A_{1}^{\prime}\right)\left(\dot{\beta}+\beta^{2}+1\right)= & \frac{1}{u^{3}}\left[32\nu a_{s}\left(2A_{3}\frac{A_{1}^{\prime}}{A_{1}}-A_{3}^{\prime}\right)-\ell^{2}\left(A_{4}^{\prime}A_{1}-A_{4}A_{1}^{\prime}\right)\right]\\
+u\left(\dot{\beta_{\rho}}+\beta_{\rho}^{2}+1\right)= & {\displaystyle \left[\ell^{2}A_{4}+32\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]\frac{A_{2}^{-1}}{u^{3}}}
+\end{align}
+
+\end_inset
+
+where the line denotes the derivative with repect to 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, and the motion equations to 
+\begin_inset Formula $i=2$
+\end_inset
+
+ are
+\begin_inset Formula 
+\begin{align}
+\beta_{\rho}= & \frac{\dot{u}}{u}\\
+u\left(\dot{\beta_{\rho}}+\beta_{\rho}^{2}+1\right)= & {\displaystyle \left[\ell^{2}A_{4}+32\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]\frac{A_{2}^{-1}}{u^{3}}}.
+\end{align}
+
+\end_inset
+
+As the framework doesn't have z-dependence thus 
+\begin_inset Formula $\dot{\alpha}$
+\end_inset
+
+ must be zero, which is 
+\begin_inset Formula $\alpha(t)=\alpha_{0}=\text{constant}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\beta_{\rho}^{(1,2,3)}=\dot{u}/u$
+\end_inset
+
+, resulting in these equations
+\begin_inset Formula 
+\begin{align}
+\left(A_{2}^{\prime}A_{1}-A_{2}A_{1}^{\prime}\right)\left(\ddot{u}+u\right)= & \frac{1}{u^{3}}\left[32\nu a_{s}\left(2A_{3}\frac{A_{1}^{\prime}}{A_{1}}-A_{3}^{\prime}\right)-\ell^{2}\left(A_{4}^{\prime}A_{1}-A_{4}A_{1}^{\prime}\right)\right] & \left(i=1,3\right)\label{eq:all-a}\\
+\ddot{u}+u= & {\displaystyle \left[\ell^{2}A_{4}+32\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]\frac{A_{2}^{-1}}{u^{3}}} & \left(i=1,2,3\right)\label{eq:all-b}
+\end{align}
+
+\end_inset
+
+Taking 
+\begin_inset Formula $\ddot{u}=0$
+\end_inset
+
+, we have the stationary solution which is
+\begin_inset Formula 
+\begin{align}
+{\displaystyle 32\nu a_{s}\left[3A_{2}A_{3}\frac{A_{1}^{\prime}}{A_{1}}-A_{3}^{\prime}A_{2}-A_{2}^{\prime}A_{3}\right]}= & \ell^{2}\left[A_{2}^{\prime}A_{1}A_{4}+A_{4}^{\prime}A_{1}A_{2}-2A_{1}^{\prime}A_{2}A_{4}\right] & \left(i=1,3\right)\\
+u_{0}^{4}= & {\displaystyle \left[\ell^{2}A_{4}+32\nu a_{s}\left(\frac{A_{3}}{A_{1}}\right)\right]A_{2}^{-1}} & \left(i=1,2,3\right)
+\end{align}
+
+\end_inset
+
+While the expansion the equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:all-a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:all-b"
+
+\end_inset
+
+ become only one that is in agreement with 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "emil"
+
+\end_inset
+
+, which has an analitical solution given by
+\begin_inset Formula 
+\begin{equation}
+u(\tau)=u_{0}\sqrt{1+\tau}.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 1-2D-fig1.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The free expansion of each kind of trial function for 
+\begin_inset Formula $\ell=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\nu a_{s}=40$
+\end_inset
+
+.
+ This value of interaction parameter was chosen to be closed of 3D parameter
+ 
+\begin_inset Formula $\gamma=800$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Considering the 
+\begin_inset Formula $\Psi_{\ell}^{(3)}$
+\end_inset
+
+, obviously, give us the exact solution; the 
+\begin_inset Formula $\Psi_{0}^{(2)}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Psi_{0}^{(3)}$
+\end_inset
+
+ are totaly in agreement with each other, and the another ones exceed in
+ 3% for gaussian and 32% for 
+\begin_inset Formula $\Psi_{0}^{(1)}$
+\end_inset
+
+.
+ In the other hand, for 
+\begin_inset Formula $\ell>0$
+\end_inset
+
+ the gaussian wave function (
+\begin_inset Formula $\Psi_{\ell}^{(G)}$
+\end_inset
+
+) showed better, when we are interesting in 
+\begin_inset Formula $\rho_{rms}$
+\end_inset
+
+, exceeding in 3% (
+\begin_inset Formula $\ell=1$
+\end_inset
+
+) and 4% (
+\begin_inset Formula $\ell=2$
+\end_inset
+
+) the exact solution.
+ Doing the limit of 
+\begin_inset Formula $\ell\gg1$
+\end_inset
+
+ the 
+\begin_inset Formula $\Psi_{\ell}^{(G)}$
+\end_inset
+
+ became itself closer and closer of 
+\begin_inset Formula $\Psi_{\ell}^{(3)}$
+\end_inset
+
+, however, 
+\begin_inset Formula $\Psi_{\ell}^{(1)}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Psi_{\ell}^{(2)}$
+\end_inset
+
+ turned most close of each other but they are away from the exact which
+ means the condensate wave function is most like a gaussian when it has
+ a large vortex at center.
+ Thus, the vortex reduces the effect of the interaction potencial.
+ If the point of interesting is the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha^{(2)}$
+\end_inset
+
+ is 1% above 
+\begin_inset Formula $\alpha^{(3)}$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha^{(1)}$
+\end_inset
+
+ exceeds in 8%, for 
+\begin_inset Formula $\ell=1$
+\end_inset
+
+.
+ The gaussian doesn't have this parameter.
+ The relation 
+\begin_inset Formula $\xi_{\ell}=\ell\xi$
+\end_inset
+
+ works just for 
+\begin_inset Formula $\Psi_{\ell}^{(2)}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Psi_{\ell}^{(3)}$
+\end_inset
+
+.
+ Hereafter, for simplicity, we will procedure with
+\begin_inset Formula $\Psi_{\ell}^{(2)}$
+\end_inset
+
+ using a gaussian wave function rather than 
+\begin_inset Formula $\psi_{TF}$
+\end_inset
+
+ in 3D case.
+\end_layout
+
+\begin_layout Section
+3D Gaussian trial function
+\end_layout
+
+\begin_layout Standard
+As mentioned before, our 3D wave function is the generalized trial function
+ of 2D case from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "emil"
+
+\end_inset
+
+, which is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Psi_{\ell}(\rho,\phi,z,t)=\left[\frac{N}{\pi^{\frac{3}{2}}\ell!R_{\rho}(t)^{2\ell+2}R_{z}(t)}\right]^{\frac{1}{2}}\rho^{\ell}e^{i\ell\phi}\psi_{G}(\rho,z,t)e^{iB_{\rho}(t)\frac{\rho^{2}}{2}+iB_{z}(t)\frac{z^{2}}{2}},\label{eq:2.3}
+\end{equation}
+
+\end_inset
+
+with
+\begin_inset Formula 
+\begin{equation}
+\psi_{G}(\rho,z,t)=\exp\left(-\frac{\rho^{2}}{2R_{\rho}(t)^{2}}\right)\exp\left(-\frac{z^{2}}{2R_{z}(t)^{2}}\right).\label{eq:2.4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\ell=0$
+\end_inset
+
+, we recover the solution for a condensate without vortex of V.M.
+ Pérez-García 
+\emph on
+et al
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "perez1"
+
+\end_inset
+
+.
+ Thus, the ansatz describe since a fundamental state until condensate with
+ multi-charged vortex at the center of the atomic cloud.
+ We must take care with parameters 
+\begin_inset Formula $R_{\rho}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+, because they are not the radii of our condensate for every values of 
+\begin_inset Formula $\ell$
+\end_inset
+
+.
+ In the case, where 
+\begin_inset Formula $\ell$
+\end_inset
+
+ is zero, 
+\begin_inset Formula $R_{\rho}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ are the radii in fact, however, when we have 
+\begin_inset Formula $\ell>0$
+\end_inset
+
+, the parameter 
+\begin_inset Formula $R_{\rho}$
+\end_inset
+
+ is the width of Gaussian at least a scale factor, and the peak of that
+ is at the point 
+\begin_inset Formula $R_{\rho}\sqrt{\ell}$
+\end_inset
+
+.
+ It's occurs due the absence of a parameter which separate these two information
+, radius of vortex core and radius of the condensate.
+ Thereby, absence of these two parameters, we have all of information about
+ vortex core and cloud radius in the only one parameter, 
+\begin_inset Formula $R_{\rho}$
+\end_inset
+
+.
+ For that reason, we will define the radius as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+R_{\bot}^{(\ell)}(t)= & \sqrt{\left\langle \rho^{2}\right\rangle }=R_{\rho}^{(\ell)}(t)\sqrt{\ell+1}\label{eq:2.5a}\\
+R_{||}^{(\ell)}(t)= & R_{z}^{(\ell)}(t).\label{eq:2.5b}
+\end{align}
+
+\end_inset
+
+The 
+\begin_inset Formula $\ell$
+\end_inset
+
+, above of 
+\begin_inset Formula $R$
+\end_inset
+
+, is the index about what case we are referring, i.e., what kind of condensate
+ within circulation.
+ And the vortex core, 
+\begin_inset Formula $\xi$
+\end_inset
+
+, may be defined as: the healing length of a condensate without vortex calculate
+d at center of density in TF-regime, i.e.,
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+gaussiano 
+\begin_inset Formula $\xi^{(\ell)}=\ell\hbar\pi^{\frac{1}{2}}R_{\rho}^{(\ell)}\sqrt{\frac{R_{z}^{(\ell)}}{2mNU_{0}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\xi^{(\ell)}=\ell\hbar R_{\rho}^{(\ell)}\sqrt{\frac{\pi R_{z}^{(\ell)}}{5mNU_{0}}},\label{eq:2.6}
+\end{equation}
+
+\end_inset
+
+using the parameters, 
+\begin_inset Formula $R_{\rho}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+, of them respective number of circulation.
+\end_layout
+
+\begin_layout Standard
+Now we substited 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2.4"
+
+\end_inset
+
+in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1.2"
+
+\end_inset
+
+ and integrate its over all space therefore the Lagrangian is
+\begin_inset Formula 
+\begin{equation}
+L=N\hbar\omega_{\rho}\left\{ \frac{\left(\ell+1\right)}{2}\left[\frac{1}{r_{\rho}^{2}}+\left(\dot{\beta}_{\rho}+\beta_{\rho}^{2}+1\right)r_{\rho}^{2}\right]+\frac{1}{4}\left[\frac{1}{r_{z}^{2}}+\left(\dot{\beta}_{z}+\beta_{z}^{2}+\lambda^{2}\right)r_{z}^{2}\right]+\frac{\gamma(2\ell)!}{2^{2\ell}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}r_{z}}\right\} ,\label{eq:2.8}
+\end{equation}
+
+\end_inset
+
+where varational parameters were scaled as 
+\begin_inset Formula $R_{\rho}(t)=a_{osc}r_{\rho}(t)$
+\end_inset
+
+, 
+\begin_inset Formula $R_{z}(t)=a_{osc}r_{z}(t)$
+\end_inset
+
+, 
+\begin_inset Formula $B_{\rho}(t)=a_{osc}^{-2}\beta_{\rho}(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{z}(t)=a_{osc}^{-2}\beta_{z}(t)$
+\end_inset
+
+, with the harmonic oscilator length being 
+\begin_inset Formula $a_{osc}=\sqrt{\hbar/m\omega_{\rho}}$
+\end_inset
+
+.
+ And the intecation parameter becomes dimensionless being write as 
+\begin_inset Formula $\gamma=Na_{s}/a_{osc}$
+\end_inset
+
+.
+ The equation of motion are extracted from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2.8"
+
+\end_inset
+
+ using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1.4"
+
+\end_inset
+
+ thus these are given by:
+\begin_inset Formula 
+\begin{align}
+\left(\dot{\beta}_{\rho}+\beta_{\rho}^{2}+1\right)r_{\rho}= & \frac{1}{r_{\rho}^{3}}+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell+1\right)!\ell!r_{\rho}^{3}r_{z}}\label{eq:2.9a}\\
+\beta_{\rho}= & {\displaystyle \frac{\dot{r_{\rho}}}{r_{\rho}}}\label{eq:2.9b}\\
+\left(\dot{\beta}_{z}+\beta_{z}^{2}+\lambda^{2}\right)r_{z}= & \frac{1}{r_{z}^{3}}+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}r_{z}^{2}}\label{eq:2.9c}\\
+\beta_{z}= & {\displaystyle \frac{\dot{r_{z}}}{r_{z}}}.\label{eq:2.9d}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These four equations can be reduced to only two, which are:
+\begin_inset Formula 
+\begin{align}
+\ddot{r_{\rho}}+r_{\rho}= & \frac{1}{r_{\rho}^{3}}+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell+1\right)!\ell!r_{\rho}^{3}r_{z}}\label{eq:2.10a}\\
+\ddot{r_{z}}+\lambda^{2}r_{z}= & \frac{1}{r_{z}^{3}}+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}r_{z}^{2}}.\label{eq:2.10b}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Stationary case
+\end_layout
+
+\begin_layout Standard
+By calculate the functional energy using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2.1"
+
+\end_inset
+
+ we obtain each contribution which the circulation carries.
+ Thus, the energy of condensate with 
+\begin_inset Formula $\ell$
+\end_inset
+
+ quanta of circulation is: 
+\begin_inset Formula 
+\begin{equation}
+E_{\ell}=N\hbar\omega_{\rho}\left[\frac{\left(\ell+1\right)}{2}\left(\frac{1}{r_{\rho}^{2}}+r_{\rho}^{2}\right)+\frac{1}{4}\left(\frac{1}{r_{z}^{2}}+\lambda^{2}r_{z}^{2}\right)+\frac{\gamma(2\ell)!}{2^{2\ell}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}r_{z}}\right].\label{eq:3.1}
+\end{equation}
+
+\end_inset
+
+Looking at the kinetic terms, proportional to 
+\begin_inset Formula $r_{\rho}^{-2}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{z}^{-2}$
+\end_inset
+
+, we may observe the kinetic energy increase linearity with circulation.
+ The same behavior happens with energy due the harmonic potential, 
+\begin_inset Formula $r_{\rho}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{z}^{2}$
+\end_inset
+
+.
+ Although, the interaction energy has a distinct behavior, this contribution
+ in the energy of condensate is lower while 
+\begin_inset Formula $\ell$
+\end_inset
+
+ increases, i.e, the interaction energy decreases asymptotically as a function
+ of 
+\begin_inset Formula $\ell$
+\end_inset
+
+, and goes to zero in the limit of the high circulation, i.e.
+ big vortex.
+ Through the minimization of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.1"
+
+\end_inset
+
+ in respect by the parameters 
+\begin_inset Formula $r_{\rho}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{z}$
+\end_inset
+
+, we obtain the stationary solution for the trapped condensate, this procedure
+ is equivalent to turns zero the acceleration and velocity in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2.10"
+
+\end_inset
+
+.
+ Hence, it results in two coupled equations which are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+r_{\rho0}^{4}= & 1+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}(\ell+1)!\ell!r_{z0}}\label{eq:3.2a}\\
+\lambda^{2}r_{z0}^{4}= & 1+\frac{\gamma(2\ell)!r_{z0}}{2^{2\ell-1}\sqrt{2\pi}(\ell!)^{2}r_{\rho0}^{2}}.\label{eq:3.2b}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, we might validate the limits of trapped conditions, so: if 
+\begin_inset Formula $\ell$
+\end_inset
+
+ values 0 or 1, the limit of Thomas-Fermi regime may be described taking
+ large 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ This is equivalent we neglect the kinetic term in both equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.2a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.2b"
+
+\end_inset
+
+.
+ Thus the equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.2a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.2b"
+
+\end_inset
+
+ turns:
+\begin_inset Formula 
+\begin{align}
+r_{\rho0}= & \left(\ell+1\right)^{-\frac{3}{10}}\left[\frac{\gamma\lambda(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}}\right]^{\frac{1}{5}}\label{eq:3.3a}\\
+r_{z0}= & \left[\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}\lambda^{2}}\right]^{\frac{1}{3}}.\label{eq:3.3b}
+\end{align}
+
+\end_inset
+
+Now, the case where 
+\begin_inset Formula $\ell\geq2$
+\end_inset
+
+, the kinetic term is the order of the interaction term to the 
+\begin_inset Formula $r_{\rho0}$
+\end_inset
+
+ equation at 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.2a"
+
+\end_inset
+
+.
+ Therefore, the 
+\begin_inset Formula $r_{\rho0}$
+\end_inset
+
+ equation keeps the same one in the Thomas-Fermi regime, for as much as,
+ the 
+\begin_inset Formula $r_{z0}$
+\end_inset
+
+ equation have the kinetic term neglected, then 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.2b"
+
+\end_inset
+
+ becomes:
+\begin_inset Formula 
+\begin{align}
+r_{\rho0}^{4}= & 1+\left(\ell+1\right)^{-3}\left[\frac{\gamma\lambda(2\ell)!r_{\rho}}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}}\right]^{\frac{2}{3}}\label{eq:3.4a}\\
+r_{z0}= & \left[\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}\lambda^{2}}\right]^{\frac{1}{3}}.\label{eq:3.4b}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Free expansion
+\end_layout
+
+\begin_layout Standard
+The free expansion equations are obtained when the trap terms from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2.10a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2.10b"
+
+\end_inset
+
+ are threw out, and thus they are changed to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\ddot{r_{\rho}}= & \frac{1}{r_{\rho}^{3}}+\frac{(2\ell)!\gamma}{2^{2\ell-1}\left(2\pi\right)^{\frac{1}{2}}(\ell+1)!\ell!r_{\rho}^{3}r_{z}}\label{eq:4.2a}\\
+\ddot{r_{z}}= & \frac{1}{r_{z}^{3}}+\frac{(2\ell)!\gamma}{2^{2\ell-1}\left(2\pi\right)^{\frac{1}{2}}(\ell!)^{2}r_{\rho}^{2}r_{z}^{2}}.\label{eq:4.2b}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It've already known that the asymptotical behavior of expansion's rate is
+ justified by the interaction term is greater than kinetic, thus the kinetic
+ term just affects its beahivor in a short time, i.e., at the first miliseconds.
+ After it the other term dominate.
+ Although when 
+\begin_inset Formula $\ell$
+\end_inset
+
+ becomes large enough that it makes the interaction terms goes to zero.
+ Therefore the equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2b"
+
+\end_inset
+
+ will just have the kinetic terms, which is the same caso of a Bose-Einstein
+ condensate in the limit of ideal gas.
+ Thus the free expansion equations becomes
+\begin_inset Formula 
+\begin{align}
+\ddot{r_{\rho}}= & \frac{1}{r_{\rho}^{3}}\label{eq:4.3a}\\
+\ddot{r_{z}}= & \frac{1}{r_{z}^{3}}\label{eq:4.3b}
+\end{align}
+
+\end_inset
+
+and the initial conditions in that case are 
+\begin_inset Formula $r_{\rho}(0)=r_{\rho0}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{z}(0)=r_{z0}=\lambda^{-\frac{1}{2}}$
+\end_inset
+
+.
+ Solving them we have
+\begin_inset Formula 
+\begin{equation}
+r_{j}(\tau)=\sqrt{r_{j}(0)^{2}+r_{j}(0)^{-2}\tau^{2}},\label{eq:4.4}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $j=\rho,z$
+\end_inset
+
+.
+ This last result is also similar to 2D case which was done in the section
+ III, nevertheless it carries the interaction term together proportional
+ at 
+\begin_inset Formula $r^{-3}$
+\end_inset
+
+.
+ To validate these results, we made a direct simulation of the GPE which
+ is ploted at Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename num01.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Prolate shape (
+\begin_inset Formula $\lambda=0.1$
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename num00.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Spherical shape (
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Free expansion.
+ Full line is from the variational method, and dots come from the direct
+ numerical simulation of GPE in TF-regime (
+\begin_inset Formula $\gamma=800$
+\end_inset
+
+).
+ While the black color represents 
+\begin_inset Formula $\ell=0$
+\end_inset
+
+, and red color 
+\begin_inset Formula $\ell=2$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results and Discussions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig4.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Energy plotted as function of the trap anisotropy by fixing interaction
+ parameter as 800.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{labelfont=bf}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig10.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda=0.1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4-a"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig12.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda=10$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4-b"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig11.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4-c"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig13b.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ell=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4-d"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Aspect ratio plotted while the free expansion for the respective trapped
+ shapes: (a) prolate shape, (b) oblate shape and (c) spherical shape.
+ They were calculated for 
+\begin_inset Formula $\gamma=800$
+\end_inset
+
+.
+ The plot of (d) represents the ratio of vortex core by radial radius, while
+ the free expansion, for several kind of trap shapes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig14.eps
+	scale 65
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig15.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda=0.1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig18.eps
+	scale 65
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename 1-FreeExpansionMultiplyCV-fig19.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda=10$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The asymptotic behavior of expansion velocities with 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ for the prolate and oblate shapes of initial potencial.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+The method used gives us good results, where we have calculated the initial
+ conditions to the free expansion through 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.2"
+
+\end_inset
+
+ by Newton's method, and solved the equations
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2"
+
+\end_inset
+
+ by fourth-order Runge-Kutta to flying time of the order of 30ms.
+ Furthermore, all of this graphic are to 
+\begin_inset Formula $\omega_{\rho}/2\pi=207Hz$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma=800$
+\end_inset
+
+, because these values are the laboratory data from our experimental group.
+\end_layout
+
+\begin_layout Plain Layout
+The approach 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2.6"
+
+\end_inset
+
+ proved to be usable for 
+\begin_inset Formula $\ell=1$
+\end_inset
+
+, which the case has the same energy when compared with the energy of 
+\begin_inset Formula $\ell=0$
+\end_inset
+
+.
+ By checking 
+\begin_inset Formula $\xi^{(\ell)}$
+\end_inset
+
+ for 
+\begin_inset Formula $\ell>1$
+\end_inset
+
+, it was expected that 
+\begin_inset Formula $\xi^{(\ell)}$
+\end_inset
+
+ was multiple of 
+\begin_inset Formula $\xi^{(1)}$
+\end_inset
+
+ as it is known from literature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pethick,aa"
+
+\end_inset
+
+, i.e., 
+\begin_inset Formula $\xi^{(\ell)}=\ell\xi^{(1)}$
+\end_inset
+
+.
+ Although the result was 
+\begin_inset Formula $\xi^{(\ell)}<\ell\xi^{(1)}$
+\end_inset
+
+, in which case is justified by we may be observed the energy of a condensate
+ with fundamental vortex is the same of a condensate without vortex.
+ Thus, the vortex core is of the order of the healing length (condensate
+ without vortex) in the limit of Thomas-Fermi regime (Figure 1).
+ Therefore, the ratio 
+\begin_inset Formula $\xi/R_{\bot}$
+\end_inset
+
+ while expansion just could be done for 
+\begin_inset Formula $\ell=1$
+\end_inset
+
+ (Figure 4 (d)) such that agree qualitatively with numerical results by
+ F.
+ Dalforo and M.
+ Modugno
+\begin_inset CommandInset citation
+LatexCommand cite
+key "michele"
+
+\end_inset
+
+, and becomes better when 
+\begin_inset Formula $\gamma\gg20$
+\end_inset
+
+ as shown in the Figure 1.
+ This results could be better if we add the core size parameter in the trial
+ function which greatly complicates the equations.
+\end_layout
+
+\begin_layout Plain Layout
+In the expansion (Figure 4), we compared the time to aspect ratio inversion
+ for 
+\begin_inset Formula $\ell=0$
+\end_inset
+
+ between this method and the data from experiments (
+\begin_inset Formula $\omega_{\rho}=2\pi207Hz$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda\thickapprox0.1$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma\thickapprox800$
+\end_inset
+
+), which resulted as a great crosscheck that is around 8ms.
+\end_layout
+
+\begin_layout Plain Layout
+Hence, as results, the vortex adds more kinetic energy and decrease the
+ interaction energy, which makes that condensate expand faster in the orthogonal
+ direction at the vortex's orientation.
+ Furthermore, it expands faster and faster to vortices with larger charge.
+ Thus, the inversion of the aspect ratio is faster when the trap shape is
+ prolate, and it slower when the condensate started the free expansion from
+ a oblate trap - as it has more charge on the vortex.
+ Which these can be explain by we are keeping 
+\begin_inset Formula $\omega_{\rho}$
+\end_inset
+
+ fixed and varing 
+\begin_inset Formula $\omega_{z}$
+\end_inset
+
+.
+ As known, the most confined direction of the condensate expands faster,
+ such that: to the spherical shape (
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+), the expansion is equal in both direction unless 
+\begin_inset Formula $\ell>0$
+\end_inset
+
+.
+ Consequently, the vortex adds expansion's speed, however, it is not enough
+ to cause reversal in aspect ratio.
+ Once the condensate containing the vortex is slightly flatted at the poles.
+\end_layout
+
+\begin_layout Plain Layout
+The factor which have more influence in the aspect ratio inversion is the
+ kinetic potencial, this one has its importance at short times.
+ Thus its explan the faster aspect ratio inversion for 
+\begin_inset Formula $\ell>0$
+\end_inset
+
+ at 
+\begin_inset Formula $\lambda=0.1$
+\end_inset
+
+, and for 
+\begin_inset Formula $\lambda=10$
+\end_inset
+
+ the slower invesion of 
+\begin_inset Formula $\ell>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\ell=0$
+\end_inset
+
+ is caused by the axial direction be most confined and containg more quantum
+ presure than other direction even though the vortex contributes with centrifuga
+l energy at this othogonal direction.
+\end_layout
+
+\begin_layout Plain Layout
+Thinking about the experimental problems in mensuring the time of aspect
+ ratio inversion at oblate shape of potencial (
+\begin_inset Formula $\lambda>1$
+\end_inset
+
+), i.e., the range of these times are shortly and reach them assymptotical
+ expansion too fast.
+ Thus we have calculated the assymptotical expansion velocities for the
+ both direction (
+\begin_inset Formula $v_{\bot}$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{||}$
+\end_inset
+
+), which can be used to verify the Figure 1 (b) behavior by the Figure 2
+ (b).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We solved the equations
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2b"
+
+\end_inset
+
+, starting with the equilibrium configuration inside the trap, to obtain
+ the evolution of the parameters of the condensate cloud during the free
+ expansion.
+ We used the frequency (
+\begin_inset Formula $\omega_{\rho}=2\pi\times207Hz$
+\end_inset
+
+) and expansion time (8ms) according with our experiments with Rubidium
+ 87 alkaline atoms.
+\end_layout
+
+\begin_layout Standard
+To calculate the initial condition we use 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2b"
+
+\end_inset
+
+ with the acceleration equal to zero or minimize the energy function 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3.1"
+
+\end_inset
+
+ in relation of the widths 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ (reference of the appropriate equations showed in the previous section).
+\end_layout
+
+\begin_layout Standard
+The graphic 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3"
+
+\end_inset
+
+ shows the initial energy of the system for a fixed interaction parameter
+ as function of the trap geometry (prolate–isotropic-oblate / 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ (dimensionless) = 800 that correspond to real values in the experiment
+ 
+\begin_inset Formula $a_{s}=100a_{0}$
+\end_inset
+
+.
+ Number atoms in condensate = 
+\begin_inset Formula $10^{5}$
+\end_inset
+
+) for different circulations.
+ The energy of the 
+\begin_inset Formula $\ell=1$
+\end_inset
+
+ state differs very little from the fundamental 
+\begin_inset Formula $\ell=0$
+\end_inset
+
+ state, as it was expected in the Thomas Fermi regime (TF).
+ About the higher order circulation states, this graphic shows an important
+ physical effect that comes from the vortex circulation.
+ The latter brings nor only an extra kinetic energy, but also affect the
+ interaction energy since it spread the condensate volume due to the centrifugal
+ effect.
+\end_layout
+
+\begin_layout Standard
+In the following we will analyze the evolution of the core during the expansion.
+ An important remark, however, is that our ansatz not describe the correct
+ behave of the vortex core, since it will be constrained with the cloud
+ dimensions.
+ To improve such ansatz an additional parameter should be used to characterize
+ the core expansion independently.
+ Since we are in the TF regime, we used the relation between the vortex
+ core and condensate central density to describe such evolution (
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2.6"
+
+\end_inset
+
+).
+ We represent the core equilibrium dimension together the approach proposed,
+ based on the density at 
+\begin_inset Formula $\rho=z=\ell=0$
+\end_inset
+
+.
+ It is clear that the two sizes coincide to 
+\begin_inset Formula $\ell=1$
+\end_inset
+
+ but for higher order of angular momentum 
+\begin_inset Formula $\ell$
+\end_inset
+
+ the ansatz start to fail, mostly when we are close the oblate configuration,
+ where the interaction energy is bigger – In this case our new characterization
+ is even better – TF approach 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Acho que vc deveria mencionar em algum trecho exatamente a forma como vc
+ variou o trap.
+ Na verdade vc fixa wr e vai variando wz.
+ Tem que ficar claro para o leitor que na configuração oblate vc the uma
+ densidade central/potencial químico maior e portanto a aproximação TF ficaria
+ melhor.
+ O Gráfico adicional que eu sugiro seria o tamanho do core como função do
+ trap, para diferentes l’s.
+ Para o ansatz sugeriria que vc tomasse a valor para o qual a densidade
+ caísse para 1/e do valor central Sabe, acho que daria para vc montar analiticam
+ente como se comportaria a razão: core ansatz/core approach como função
+ do l respectivos, não?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the expansion (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4"
+
+\end_inset
+
+), we compared the time to the aspect ratio inversion for different circulations
+, starting with each type of magnetic trap configuration.
+\end_layout
+
+\begin_layout Standard
+The influences of the higher circulation are diferent for each intial geometry
+ of the condensate.
+ For a spherical trap the dimensions of the cloud is changed according with
+ number of circulation, being that in absence of vortex the condensate´s
+ format is really spherical in the other hand the vortex turns the aspect
+ ratio greater than 1, because this one reduces the axial radius and grows
+ the radial radius.
+ In the prolate condensate, the circulation has an effect of decreasing
+ the time for aspect ratio invertion which can be interpreted as the presence
+ of the vortex has a significant addiction in the velocity field on the
+ perpendicular direction (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4-a"
+
+\end_inset
+
+).
+ It is just significant when the perpendicular direction at vortex is the
+ most confined.
+ Thus in the oposite case, when the intial geometry is oblate, the circulation
+ increases the time for aspect ratio invertion caused by fact the axial
+ radius smaller and smaller in the absence of centred atoms in the cloud
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4-b"
+
+\end_inset
+
+); even though the invertion time was lower in oblate than prolate geometry.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+new paragraph - reescrever as suas observações sobre a influência do aumento
+ da circulação sobre o aspect ratio da nuvem, tendo como parâmetro de justificat
+iva as analises a respeito da contribuição da energia cinética e de interação
+ feitas no parágrafo anterior.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the value for the core 
+\begin_inset Formula $\xi$
+\end_inset
+
+ and the solution for the evolution of the extension of the cloud given
+ by the equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:4.2b"
+
+\end_inset
+
+, we analyze how the vortex expand in relation to the cloud size.
+ This analyze is particularly important since it contributes to improve
+ the information that we extract from the absorption image technique made
+ in time of flight; for example, in the classification and quantification
+ of the number of vortex in the expanded cloud.
+ The graphic of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4-d"
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+antiga Figura 1.d - sugiro que vc separe esse resultado dos anteriores
+\end_layout
+
+\end_inset
+
+ shows the evolution of such ration in time for a cloud with unitary circulation
+ and starting with different trap anisotropy.
+ The curves can be explained basing on the variation of the central density
+ due to the trap configuration.
+ For instance, the initial core size diminished with the increase of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ since the central density increases.
+ Otherwise the variation of the velocity of expansion in the axial direction
+ has direct consequence in the dilution of the density in the vortex position,
+ dictating its rate of expansion 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Explique detalhadamente cada curva em particular, com base nessas observações
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Comparing the graphs of the aspect ratios we notice a big difference in
+ the inversion time between Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4-a"
+
+\end_inset
+
+ and Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4-b"
+
+\end_inset
+
+.
+ Thus, we think of a way to make a measurement for the prolate case which
+ we can distinguish each condensate, ie, to recognize and differentiate
+ the circulation of the vortex core condensate.
+ The Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:5"
+
+\end_inset
+
+ presents the asymptotic velocity for both initial geometry (prolate and
+ oblate) as a function of the parameter of interaction, with these graphics
+ we hoped to find a critical phenomenon which, obviously, doesn't exist
+ at this framework.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Explorar cada gráfico de velocidade critica.
+ Fazer numérico para ver se realmente não há um fenomeno critico, ou se
+ é uma falha do modelo.
+ Se a interação fosse menos relevante, poderia aparecer esse efeito de escala?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+New paragraph - Depois de colocar essa parte da comparação com os experimentos,
+ gostaria de colocar também algumas simulações numéricas para comparar com
+ seu variacional.
+ Temos que ver se a variação do aspect ratio da nuvem com circulação alta
+ está sendo bem caracterizado.
+ Vou me organizar para poder fazer isso p vc, acho que é mais urgente que
+ a precessão por enquanto.
+ Porém não descarto a possibilidade de vc fazer um paralelo com os outros
+ artigos numéricos.
+ Eles devem aparecer no seu texto em algum momento.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+New paragraph - Acho que vc poderia colocar no texto as expressões analíticas
+ da velocidade assintótica e tentar com base nelas explicar os seus gráficos
+ da Figura 2.
+ Não sei, acho que vc poderia me fazer alguns gráficos com 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ = 800 e só variando o trap, seguindo a tendência das analises anteriores.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+New TF-approach
+\end_layout
+
+\begin_layout Standard
+Using 
+\begin_inset Formula $\Psi(\vec{r},t)=\psi(\rho,z)e^{i\ell\phi}e^{-i\mu t/\hbar}$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1.1"
+
+\end_inset
+
+, we have separated the centrifugal term in the time-independent GPE,
+\begin_inset Formula 
+\begin{equation}
+\mu\psi(\rho,z)=\left[-\frac{\hbar^{2}}{2m}\nabla_{\rho,z}^{2}+\frac{\ell^{2}\hbar^{2}}{2m\rho^{2}}+V(\vec{r})+U_{0}n(\rho,z)\right]\psi(\rho,z).\label{GPE-ti}
+\end{equation}
+
+\end_inset
+
+Now we write the centrifugal terms in terms of 
+\begin_inset Formula $U_{0}n(\rho,z)$
+\end_inset
+
+, to do this we use the realation of the healing lengh 
+\begin_inset Formula $\xi$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{equation}
+\frac{\hbar^{2}}{2m\xi^{2}}=U_{0}n(\rho,z),
+\end{equation}
+
+\end_inset
+
+thus the equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "GPE-ti"
+
+\end_inset
+
+ is wroten as
+\begin_inset Formula 
+\begin{equation}
+\mu\psi(\rho,z)=\left[-\frac{\hbar^{2}}{2m}\nabla_{\rho,z}^{2}+V(\vec{r})+\left(1+\frac{\xi_{\ell}^{2}}{\rho^{2}}\right)U_{0}n(\rho,z)\right]\psi(\rho,z),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\xi_{\ell}=\ell\xi$
+\end_inset
+
+.
+ Making the TF-limit, the kinect term throw out.
+ Hence, in this way we obtain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+n(\rho,z)=\left(\frac{\rho^{2}}{\rho^{2}+\xi_{\ell}^{2}}\right)\frac{\mu-V(\vec{r})}{U_{0}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "refdoc"
+options "apsrev"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

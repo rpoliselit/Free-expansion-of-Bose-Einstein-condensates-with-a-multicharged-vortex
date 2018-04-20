@@ -1,0 +1,389 @@
+Free expansion of Bose-Einstein Condensates with a Multi-charged 
+Vortex
+
+R.P. Teles, F.E.A. dos Santos, M.A. Caracanhas and V.S. Bagnato
+
+Instituto de Física de São Carlos, USP, Caixa Postal 369, 
+13560-970 São Carlos, São Paulo, Brazil
+
+Abstract
+
+Multi-charged vortex is a stable solution of Gross-Pitaeviskii 
+equation at absence of the temperature, for the case where the 
+vortex line is at the center and along the axial axis. We have 
+started this work seeking for a trial function to describe our 
+frame work, and through a variational method, which use the 
+atomic cloud parameters as time-dependent variational parameters, 
+to describe the free expansion of BEC. Thus, we have calculated 
+the functional energy and the equations of motion, which these 
+ones were solved by 4^{th} order Runge-Kutta method. It has shown 
+great results, which are in agreemment with the experiments and 
+numerical simulations, both qualitatively and quantitatively.
+
+I. Introduction
+
+The remarkable discovery in BEC's physics was the nucleation of 
+vortices inside the Bose-Einstein condensate of Alkali atoms, 
+with many experimental evidence[3v, rev3, turb, pethick, davis]. 
+These vortices have quantized angular momentum by number of 
+particles, and they are nucleation when the system gains a 
+rotation, i.e., angular momentum. If the rotation of system 
+overcomes a critical velocity of rotation, \Omega_{c}, it 
+triggers the emergence of quantized vortices[critical1, vf1, vor2, pd]
+. Thus the dynamics of vortex formation, the stability dynamics 
+and the free expansion dynamics are the subject of several 
+studies[d1v, vi1, vi2]. The vortex dynamics have proved of 
+paramount importance for the understanding of the quantum 
+turbulence[turb, liv3], and the free expansion is the main 
+experimental method of measurement[vp, vor1, rev3, obv, MIT]. 
+There are many theoretical works about vortex latices and vortex 
+in rotating traps [aa, fad, obv, pethick, rev2, dsv], where the 
+starting point is the Gross-Pitaeviskii equation (GPE) [gpe1, gpe2]
+.
+
+In this paper we considered a muli-charged vortex at the center 
+of the condensate, which is the center of the harmonic trap. 
+Here, we used the variational method to study the effects that 
+arise while the free expansion of condensate, as consequence of 
+non-fundamental vortices. A similar works was done by E. Lundh et 
+al[emil] to the case where the vortex has only one quantum of 
+circulation, which the same work can be found with quite numeric 
+character in Micheli et al[michele].
+
+The section II present the theoretical methods used in this work. 
+In the section III, we have search for a suitable trial function 
+and analyses this one to determine the radii of condensate. Soon 
+after it, in the sections IV and V, we found the initials 
+condition and the motion equations to the free expansion, and 
+also take the TF-limit to the both.
+
+Finally, the section VI has the discussions and outlooks about 
+our results by the method employed.
+
+II. Theoretical Method
+
+At absolute zero temperature in the absense of thermal cloud the 
+system is exactly described by GPE:i\hbar\frac{\partial\Psi(\vec{r},t)}{\partial t}=\left[-\frac{\hbar^{2}}{2m}\nabla^{2}+V(\vec{r})+U_{0}\left|\Psi(\vec{r},t)\right|^{2}\right]\Psi(\vec{r},t).
+The harmonic trap is described in cylindrical coordinates as V(\vec{r})=\frac{1}{2}m\omega_{\rho}^{2}(\rho^{2}+\lambda^{2}z^{2})
+, where \lambda is the anisotropic parameter, and the constant of 
+mean-field interaction is U_{0}=4\pi\hbar^{2}a_{s}/m. Following 
+the variational principle we can write the Lagrangian density \mathcal{L}
+ which recoves the GPE for a complex field \Psi(\vec{r},t), thus \mathcal{L}
+ is writed as\begin{array}{c}
+\mathcal{L}={\displaystyle \frac{i\hbar}{2}\left(\Psi^{*}(\vec{r},t)\frac{\partial\Psi(\vec{r},t)}{\partial t}-\Psi(\vec{r},t)\frac{\partial\Psi^{*}(\vec{r},t)}{\partial t}\right)}\\
+\\{\displaystyle -\frac{\hbar^{2}}{2m}\left|\nabla\Psi(\vec{r},t)\right|^{2}-V(\vec{r})\left|\Psi(\vec{r},t)\right|^{2}-\frac{U_{0}}{2}\left|\Psi(\vec{r},t)\right|^{4}}.\end{array}
+Where \Psi(\vec{r},t) can be aprproximated by a trial function \Psi_{\ell}(\vec{r},t)
+ which depends om a seto of variational parameters q_{i}=q_{i}(t)[perez1, perez2]
+. This function can them be substituted into
+
+L=\int\mathcal{L}d^{3}r,in such a way that their time evolution 
+is given by
+
+\frac{\partial}{\partial t}\left(\frac{\partial L}{\partial\dot{q}}\right)-\frac{\partial L}{\partial q}=0.
+
+In that way, the next step is to find a suitable trial function.
+
+III. Finding a trial function
+
+In the central vortex case with multiplied charge, the wave 
+functions, in cylindrical coordinates, is given by: \psi_{\ell}(\rho,\phi,z)=f_{\ell}(\rho,z)e^{i\ell\phi},
+where f_{\ell}(\rho,z) is the amplitude of the wave function, and 
+e^{i\ell\phi} is a phase which carries the information of the 
+velocity field, where \ell is integer and means the quantum 
+number of circulation. Therefore, by introducing [eq:2.1] in 
+time-independent GPE we have a centrifugal term, which comes from 
+phase e^{i\ell\phi}. This term is write as \left(\frac{\hbar^{2}\ell\text{\texttwosuperior}}{2m\rho^{r}}\right)f
+. To find a suitable ansatz for multi-charged vortex, we 
+considered the interval of \rho\ll\xi, and we have neglected 
+potential terms from GPE. By considering only kinetic terms with 
+the additional centrifugal term, we need to solve-\frac{\hbar^{2}}{2m}\left[\frac{1}{\rho}\frac{\partial}{\partial\rho}\left(\rho\frac{\partial f}{\partial\rho}\right)\right]+\frac{\hbar^{2}\ell^{2}}{2m\rho^{2}}f=0,
+this equation give us the solution for f(\rho) when this is 
+smaller than cloud, which means the vortex solution. For \rho>\xi
+, we considered the solution of GPE without interaction 
+potential, the ideal gas solution, thus our amplitude f(\rho,z) 
+isf_{\ell}(\rho,z)=\left[\frac{N}{\pi^{\frac{3}{2}}\ell!R_{\rho}^{2\ell+2}R_{z}}\right]^{\frac{1}{2}}\rho^{\ell}\exp\left(-\frac{\rho^{2}}{2R_{\rho}^{2}}\right)\exp\left(-\frac{z^{2}}{2R_{z}^{2}}\right),
+and now, the trial function is given by:\Psi_{\ell}(\rho,\phi,z,t)=\psi_{\ell}(\rho,\phi,z)\exp\left(iB_{\rho}\frac{\rho^{2}}{2}\right)\exp\left(iB_{z}\frac{z^{2}}{2}\right).
+Where the parameters R_{\rho}, R_{z}, B_{\rho} and B_{z} are 
+time-dependent.
+
+If \ell=0, we recover the solution for a condensate without 
+vortex of V.M. Pérez-García et al[perez1]. Thus, the ansatz 
+describe since a fundamental condensate until condensates with 
+multi-charged vortex at the center of the atomic cloud. Note 
+this: the parameters B_{\rho} and B_{z} are responsible for the 
+function curvature, in other words, it is from these parameters 
+that will appears the acceleration in motion equation by the 
+variational method. We must take care with parameters R_{\rho} 
+and R_{z}, because they are not the radii of our condensate for 
+every values of \ell. In the case, where \ell is zero, R_{\rho} 
+and R_{z} are the radii in fact, but when we have \ell>0, the 
+parameter R_{\rho} is the width of Gaussian at least a scale 
+factor, and the peak of that is in the point R_{\rho}\sqrt{\ell}. 
+It´s occurs due the absence of a parameter which separate these 
+two information, radius of vortex core and radius of the 
+condensate. Thereby, absence of these two parameters, we have all 
+of information about vortex core and cloud radius in the only one 
+parameter, R_{\rho}. For that reason, we will define the radius 
+as:\begin{array}{c}
+R_{\bot}^{(\ell)}(t)=\sqrt{\left\langle \rho^{2}\right\rangle }=R_{\rho}^{(\ell)}(t)\sqrt{\ell+1}\\
+\\R_{||}^{(\ell)}(t)=R_{z}^{(\ell)}(t).\end{array}
+The \ell, above of R, is the index about what case we are 
+referring, i.e., what kind of condensate within circulation. And 
+the vortex core, \xi, may be defined as: the healing length of a 
+condensate without vortex calculated at center of density, i.e.,\xi^{(\ell)}=\ell\hbar\pi^{\frac{3}{4}}R_{\rho}^{(\ell)}\sqrt{\frac{R_{z}^{(\ell)}}{2mNU_{0}}},
+using the parameters, R_{\rho} and R_{z}, of them respective 
+number of circulation.
+
+Now we substited [eq:2.4]in [eq:1.2] and integrate its ovar all 
+space therefore the Lagrangian isL=N\hbar\omega_{\rho}\left\{ \frac{\left(\ell+1\right)}{2}\left[\frac{1}{r_{\rho}^{2}}+\left(\dot{\beta}_{\rho}+\beta_{\rho}^{2}+1\right)r_{\rho}^{2}\right]+\frac{1}{4}\left[\frac{1}{r_{z}^{2}}+\left(\dot{\beta}_{z}+\beta_{z}^{2}+\lambda^{2}\right)r_{z}^{2}\right]+\frac{\gamma(2\ell)!}{2^{2\ell}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}r_{z}}\right\} ,
+where varational parameters were scaled as R_{\rho}(t)=a_{osc}r_{\rho}(t)
+, R_{z}(t)=a_{osc}r_{z}(t), B_{\rho}(t)=a_{osc}^{-2}\beta_{\rho}(t)
+ and B_{z}(t)=a_{osc}^{-2}\beta_{z}(t), with the harmonic 
+oscilator length being a_{osc}=\sqrt{\hbar/m\omega_{\rho}}. And 
+the intecation parameter becomes dimensionless being write as \gamma=Na_{s}/a_{osc}
+. The equation of motion are extracted from [eq:2.8] using [eq:1.4]
+ thus these are given by:\begin{array}{c}
+{\displaystyle \left(\dot{\beta}_{\rho}+\beta_{\rho}^{2}+1\right)r_{\rho}=\frac{1}{r_{\rho}^{3}}+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell+1\right)!\ell!r_{\rho}^{3}r_{z}}}\\
+\\{\displaystyle \beta_{\rho}=\frac{\dot{r_{\rho}}}{r_{\rho}}}\\
+\\{\displaystyle \left(\dot{\beta}_{z}+\beta_{z}^{2}+\lambda^{2}\right)r_{z}=\frac{1}{r_{z}^{3}}+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}r_{z}^{2}}}\\
+\\{\displaystyle \beta_{z}=\frac{\dot{r_{z}}}{r_{z}}}.\end{array}
+
+These four equations can be reduced to only two, which are:\begin{array}{c}
+{\displaystyle \ddot{r_{\rho}}+r_{\rho}=\frac{1}{r_{\rho}^{3}}+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell+1\right)!\ell!r_{\rho}^{3}r_{z}}}\\
+\\{\displaystyle \ddot{r_{z}}+\lambda^{2}r_{z}=\frac{1}{r_{z}^{3}}+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}r_{z}^{2}}}.\end{array}
+
+IV. Stationary case
+
+By calculate the functional energy using [eq:2.1] we obtain each 
+contribution which the circulation carries. Thus, the energy of 
+condensate with \ell quanta of circulation is: E_{\ell}=N\hbar\omega_{\rho}\left[\frac{\left(\ell+1\right)}{2}\left(\frac{1}{r_{\rho}^{2}}+r_{\rho}^{2}\right)+\frac{1}{4}\left(\frac{1}{r_{z}^{2}}+\lambda^{2}r_{z}^{2}\right)+\frac{\gamma(2\ell)!}{2^{2\ell}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}r_{z}}\right],
+where \Gamma is the Gamma Function. Looking at the kinetic terms, 
+proportional to r_{\rho}^{-2} and r_{z}^{-2}, we may observe the 
+kinetic energy increase linearity with circulation. The same 
+behavior happens with energy from the harmonic potential, r_{\rho}^{2}
+ and r_{z}^{2}. Although, the interaction energy has a distinct 
+behavior, this contribution in the energy of condensate is lower 
+while \ell increases, i.e, the interaction energy decreases 
+asymptotically as a function of \ell, and goes to zero in the 
+limit of the high circulation or big vortex. Through the 
+minimization of [eq:3.1] in respect by the parameters r_{\rho} 
+and r_{z}, we obtain the stationary solution for the trapped 
+condensate, this procedure is equivalent to turns zero the 
+acceleration and velocity in [eq:2.10]. Hence, it results in two 
+coupled equations which are:
+
+\begin{array}{c}
+{\displaystyle r_{\rho0}^{4}=1+\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}(\ell+1)!\ell!r_{z0}}}\\
+\\{\displaystyle \lambda^{2}r_{z0}^{4}=1+\frac{\gamma(2\ell)!r_{z0}}{2^{2\ell-1}\sqrt{2\pi}(\ell!)^{2}r_{\rho0}^{2}}.}\end{array}
+
+Here, we might validate the limits of trapped conditions, so: if \ell
+ value 0 or 1, the limit of Thomas-Fermi regime may be describe 
+taking large \gamma. This is equivalent we neglect the kinetic 
+term in both equations [eq:3.2]. Thus the equations [eq:3.2] 
+turns:\begin{array}{c}
+{\displaystyle r_{\rho0}=\left(\ell+1\right)^{-\frac{3}{10}}\left[\frac{\gamma\lambda(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}}\right]^{\frac{1}{5}}}\\
+\\{\displaystyle r_{z0}=\left[\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}\lambda^{2}}\right]^{\frac{1}{3}}}.\end{array}
+Now, the case where \ell\geq2, the kinetic term is the order of 
+the interaction term to the r_{\rho0} equation at [eq:3.2]. 
+Therefore, the r_{\rho0} equation keeps the same one in the 
+Thomas-Fermi regime, for as much as, the r_{z0} equation have the 
+kinetic term neglected, then [eq:3.2] becomes:\begin{array}{c}
+{\displaystyle r_{\rho0}^{4}=1+\left(\ell+1\right)^{-3}\left[\frac{\gamma\lambda(2\ell)!r_{\rho}}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}}\right]^{\frac{2}{3}}}\\
+\\{\displaystyle {\displaystyle r_{z0}=\left[\frac{\gamma(2\ell)!}{2^{2\ell-1}\sqrt{2\pi}\left(\ell!\right)^{2}r_{\rho}^{2}\lambda^{2}}\right]^{\frac{1}{3}}}.}\end{array}
+
+V. Free expansion
+
+The free expansion equations are obtained when the trap term from 
+[eq:2.10] is threw out, and thus they are changed to
+
+\begin{array}{c}
+{\displaystyle \ddot{r_{\rho}}=\frac{1}{r_{\rho}^{3}}+\frac{(2\ell)!\gamma}{2^{2\ell-1}\left(2\pi\right)^{\frac{1}{2}}(\ell+1)!\ell!r_{\rho}^{3}r_{z}}}\\
+\\{\displaystyle \ddot{r_{z}}=\frac{1}{r_{z}^{3}}+\frac{(2\ell)!\gamma}{2^{2\ell-1}\left(2\pi\right)^{\frac{1}{2}}(\ell)!^{2}r_{\rho}^{2}r_{z}^{2}}}.\end{array}
+
+It´ve already known that the asymptotical behavior of expansion´s 
+rate is justified by the interaction term is greater than 
+kinetic, thus the kinetic term just affects its beahivor in a 
+short time, i.e., at the first miliseconds. After it the other 
+term dominate. Although when \ell becomes large enough that it 
+makes the interaction terms goes to zero. Therefore the equations 
+[eq:4.2] will just have the kinetic terms, which is the same caso 
+of a Bose-Einstein condensate in the limit of ideal gas. Thus the 
+free expansion equations becomes\begin{array}{c}
+{\displaystyle \ddot{r_{\rho}}=\frac{1}{r_{\rho}^{3}}}\\
+\\{\displaystyle \ddot{r_{z}}=\frac{1}{r_{z}^{3}}},\end{array}
+and the initial conditions in that case are r_{\rho}(0)=r_{\rho0}=1
+ and r_{z}(0)=r_{z0}=\lambda^{-\frac{1}{2}}. Solving them we haver_{j}(\tau)=\sqrt{r_{j}(0)^{2}+r_{j}(0)^{-2}\tau^{2}},
+where j=\rho,z. This last result is also similar to 2D case which 
+was done in [emil], nevertheless they have solved carrying the 
+intection term at \rho direction. 
+
+VI. Results and Discussions
+
+[float Figure:
+
+
+[float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig1.eps>
+
+[Sub-Figure a:
+The ratio \xi/R_{\bot} as a function of the trap anisotropy for 
+(full line) \gamma=5 and \gamma=800 (dashed line).
+]
+][float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig2.eps>
+
+[Sub-Figure b:
+The ratio \xi/R_{\bot} for three shapes of trap: prolate (full 
+line), spherical (dotted line) and oblate (dashed line).
+]
+]
+
+[Figure 1:
+
+]
+]
+
+[float Figure:
+
+
+[float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig3.eps>
+
+[Sub-Figure a:
+\gamma=5
+]
+][float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig4.eps>
+
+[Sub-Figure b:
+\gamma=800
+]
+]
+
+[Figure 2:
+The energy [eq:3.1] as function of the trap anisotropy \lambda 
+for two cases: (a) Low atomic interaction, and (b) high atomic 
+interaction.
+]
+]
+
+[float Figure:
+
+
+[float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig5.eps>
+
+[Sub-Figure a:
+\lambda=0.1
+]
+][float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig6.eps>
+
+[Sub-Figure b:
+\lambda=1
+]
+]
+
+[float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig7.eps>
+
+[Sub-Figure c:
+\lambda=10
+]
+]
+
+[Figure 3:
+Plot of energy as function of the interaction parameter \gamma. 
+The (a) represents a prolate shape, (b) is the case of spherical 
+shape, and a oblate shape at (c).
+]
+]
+
+[float Figure:
+
+
+[float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig10.eps>
+
+[Sub-Figure a:
+\lambda=0.1
+]
+][float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig12.eps>
+
+[Sub-Figure b:
+\lambda=10
+]
+]
+
+[float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig11.eps>
+
+[Sub-Figure c:
+\lambda=1
+]
+][float Figure:
+<Graphics file: /home/rafael/Dropbox/Artigos/1-FreeExpansionMultiplyCV-fig13.eps>
+
+[Sub-Figure d:
+\ell=1
+]
+]
+
+[Figure 4:
+Aspect ratio plotted while the free expansion for the respective 
+trapped shapes: (a) prolate shape, (b) oblate shape and (c) 
+spherical shape. They were calculated for \gamma=800. The plot of 
+(d) represents the ratio of vortex core by radial radius, while 
+the free expansion, for several kind of trap shapes.
+]
+]
+
+The method used gives us good results, where we have calculated 
+the initial conditions to the free expansion through [eq:3.2] by 
+Newton's method, and solved the equations[eq:4.2] by fourth-order 
+Runge-Kutta to flying time of the order of 30ms. Furthermore, all 
+of this graphic are to \omega_{\rho}/2\pi=207Hz and \gamma=800, 
+because these values are the laboratory data from our 
+experimental group.
+
+The approach [eq:2.6] proved to be usable for \ell=1, which the 
+case has the same energy when compared with the energy of \ell=0. 
+By checking \xi^{(\ell)} for \ell>1, it was expected that \xi^{(\ell)}
+ was multiple of \xi^{(1)} as it is known from literature[pethick, aa]
+, i.e., \xi^{(\ell)}=\ell\xi^{(1)}. Although the result was \xi^{(\ell)}<\ell\xi^{(1)}
+, in which case is justified by the Figures 2 and 3, where we may 
+be observed the energy of a condensate with fundamental vortex is 
+the same of a condensate without vortex. Thus, the vortex core is 
+of the order of the healing length (condensate without vortex) in 
+the limit of Thomas-Fermi regime (Figure 1). Therefore, the ratio 
+\xi/R_{\bot} while expansion just could be done for \ell=1 
+(Figure 4 (d)) such that agree qualitatively with numerical 
+results by F. Dalforo and M. Modugno[michele], and becomes better 
+when \gamma\gg20 as shown in the Figure 1.
+
+In the expansion (Figure 4), we compared the time to aspect ratio 
+inversion for \ell=0 between this method and the data from 
+experiments (\omega_{\rho}=2\pi207Hz, \lambda\thickapprox0.1 and \gamma\thickapprox800
+), which resulted as a great crosscheck that is around 8ms.
+
+Hence, as results, the vortex adds more kinetic energy and 
+decrease the interaction energy, which makes that condensate 
+expand faster in the orthogonal direction at the vortex's 
+orientation. Furthermore, it expands faster and faster to 
+vortices with larger charge. Thus, the inversion of the aspect 
+ratio is faster when the trap shape is prolate , and it slower 
+when the condensate started the free expansion from a oblate trap 
+- as it has more charge on the vortex. As known, the most 
+confined direction of the condensate expands faster, such that: 
+to the spherical shape (\lambda=1), the expansion is equal in 
+both direction unless \ell>0. Consequently, the vortex adds 
+expansion's speed, however, it is not enough to cause reversal in 
+aspect ratio. Once the condensate containing the vortex is 
+slightly flatted at the poles.
+
+
+
+
+[LaTeX Command: bibtex]
+
