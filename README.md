@@ -1,6 +1,6 @@
 # Free expansion of Bose-Einstein condensates with a multicharged vortex
 
-![main results](show.jpg)
+![main results](show.png)
 
 Repository of the following research:
 
